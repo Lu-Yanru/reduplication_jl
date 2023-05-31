@@ -1,0 +1,17 @@
+*.bat
+*.gz
+*.aux
+*.log
+*.bbl
+*.blg
+*.lot
+*.tcp
+*.toc
+*.lof
+*.adx
+*.bcf
+*.ldx
+*.idx
+*.xml
+*.sdx
+*.sh
