@@ -1,0 +1,50 @@
+% disambiguate bib names
+\newrobustcmd{\disambiguate}[3]{#2~#3}
+
+% refs
+\newcommand{\sectref}[1]{Section~\ref{#1}}
+\newcommand{\figref}[1]{Figure~\ref{#1}}
+\newcommand{\cioktegen}[2][]{\citeauthor{#2}'s (\citeyear*[#1]{#2})}
+
+%%% Linguistics graphs related
+%% indexed box
+\newlength{\MyetagLength}
+\settowidth{\MyetagLength}{{$\scriptstyle 1$}}
+
+%% indexed box
+\newcommand{\iboxt}[1]{{%
+        \setlength{\fboxsep}{1.25pt}%
+        \fbox{$\scriptstyle #1$}%
+}}
+
+
+\newcommand{\ibox}[1]{%
+    %  \iboxt{#1}\,%       why this extra space???? 20.02.2018
+    \iboxt{#1}%
+}
+
+\newcommand{\iboxb}[1]{(\,\iboxt{#1}\,)}
+
+%% empty box
+\newcommand{\etag}{\ibox{\rule{0ex}{1.1ex}\hspace{\MyetagLength}}\xspace}
+
+%% type
+\newcommand{\type}[1]{{\normalfont\itshape #1\/}}
+
+%% list of phons
+\newcommand{\phonliste}[1]{%
+    \mbox{%
+        $%
+        %
+        \left\langle \mbox{\normalfont\itshape#1} \right\rangle%
+        $%
+        %\\[-1.5mm]
+    }%
+}
+
+\newcommand{\sliste}[1]{%
+    \mbox{%
+        $\left\langle\mbox{\upshape #1}\right\rangle$}%
+}
+
+\newcommand{\impl}{$\Rightarrow$\xspace}

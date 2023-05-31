@@ -1,0 +1,90 @@
+\documentclass[%
+%anonym,
+% times,
+ %referee,
+ %doublespacing,
+ ]{lin}
+
+\input{localpackages}
+\input{localcommands}
+
+\begin{document}
+
+
+
+\leftrunning{Yanru Lu \& Stefan Müller}  % Short author list
+
+\rightrunning{An HPSG account for verbal reduplication in Mandarin Chinese} % Short title
+
+
+
+\title{An HPSG account for verbal reduplication in Mandarin Chinese}
+
+
+
+\author[1]{\givenname{Yanru} \surname{Lu}}
+
+
+
+\address[1]
+{%
+  \inst{Humboldt-Universität zu Berlin}, % Institution name should be in \inst
+  \addr{Unter den Linden 6}, % Street 
+  \addr{D-10099 Berlin}, % Postcode etc
+  \cnty{Germany}  % Country
+  \email{yanru.lu@hu-berlin.de} % email
+}
+
+
+
+\author[2]{\givenname{Stefan} \surname{Müller}}
+
+
+
+\address[2]
+{%
+  \inst{Humboldt-Universität zu Berlin}, % Institution name should be in \inst
+  \addr{Unter den Linden 6}, % Street 
+  \addr{D-10099 Berlin}, % Postcode etc
+  \cnty{Germany}  % Country
+  \email{st.mueller@hu-berlin.de} % email
+}
+
+
+
+\maketitle
+
+
+
+\begin{abstract}
+The current study presents an HPSG analysis for verbal reduplication in Mandarin Chinese. We provide a detailed description of the phenomenon. After discussing reduplication’s interaction with \textit{Aktionsarten} and aspect markers, we argue that it is a morphological rather than a syntactic process. We put forward a lexical rule for verbal reduplication in Mandarin Chinese, and the different forms of reduplication are captured in an inheritance hierarchy. The interaction between verbal reduplication and aspect marking is handled by multiple inheritance. This analysis covers all forms of verbal reduplication in Mandarin Chinese and has none of the shortcomings of previous analyses.
+\keywords{HPSG, MRS, Mandarin Chinese, verbal reduplication}
+\end{abstract}
+
+
+
+\input{chapters/ch01-Intro} 
+
+\input{chapters/ch02-Phenomenon}
+
+%\input{chapters/ch03-Theory}
+
+\input{chapters/ch04-Previous}
+
+\input{chapters/ch05-Analysis}
+
+\input{chapters/ch06-Conclusion}
+
+
+
+
+
+\renewrobustcmd{\disambiguate}[3]{#1}
+\bibliographystyle{lin}
+
+\bibliography{Bib.bib}
+
+
+
+\end{document}
+
