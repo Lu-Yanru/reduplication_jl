@@ -1,24 +1,24 @@
 \section{A new HPSG analysis}\label{sec:analysis}
 
 In what follows, we suggest a new lexical-rule-based analysis of aspect marking and reduplication
-using MRS, as proposed in \citet{LuMueller2021}.
+using Minimal Recursion Semantics (MRS; \citealt{Copestakeetal2005}).%, as proposed in \citet{LuMueller2021}.
 
 The implicational constraint in  (\ref{avm:redup}) shows the constraints on all structures of type
 \textit{verbal-reduplication-lr} for Mandarin Chinese. 
 Such structures take a verb as \textsc{lexical-daughter (lex-dtr)}.  
 The output reduplicates the \textsc{phonology (phon)} of the input verb with the possibility to have further phonological material in between.
 \etag{} indicates an underspecified list which could be empty or not. 
-A delimitative relation is appended to the \textsc{rels} value of the input verb, 
+A delimitative relation is appended to the \textsc{relations (rels)} value of the input verb, 
 and it takes the event index of the input verb as argument. 
 The label of the output \iboxb{2} is identified with the label of the input and with the label of the delimitative relation, 
 hence \type{delimitative-rel} is treated as a modifier.
- Further relations can be added at the beginning of the \textsc{relations (rels)} list to allow for
+ Further relations can be added at the beginning of the \textsc{rels} list to allow for
 the additional perfective meaning in A-\textit{le}-A and A-\textit{le}-\textit{yi}-A. 
 The combination with the perfective will be elaborated on in the following paragraphs.
 
 \ea
 \type{verbal-reduplication-lr} \impl\\
-\scalebox{.9}{%
+%\scalebox{.9}{%
     \avm{
         [
         phon & \1 $\oplus$ \etag $\oplus$ \1\\
@@ -32,7 +32,8 @@ The combination with the perfective will be elaborated on in the following parag
         cont & [ ltop & \2\\
         ind  & \3 ]]\\
         rels \4 ] ]
-}}
+}
+%}
 \label{avm:redup}
 \z
 
@@ -70,17 +71,17 @@ which does not add further relations.
 Hence, what is \etag in the \textsc{rels} list in (\ref{avm:redup}) is the empty list in (\ref{avm:nonperf}):
 \ea\label{avm:nonperf}
 \type{non-perfective-verbal-reduplication-lr} \impl\\
-\scalebox{.9}{%
+%\scalebox{.9}{%
     \avm{
         [
         rels & \1 $\oplus$ < [ ] > \smallskip\\
         lex-dtr & [ rels \1 ] ]
     }
-}
+%}
 \z
-The \textsc{rels} list of the output of the lexical rule \iboxb{1} is the \textsc{rels} list of
-the daughter plus one element. 
-Since the element is specified in the supertype, it has not been specified in (\ref{avm:nonperf}) again. 
+The \textsc{rels} list of the output of the lexical rule is the \textsc{rels} list of
+the daughter \iboxb{1} plus a list with one element. 
+Since this element is specified in the supertype, it is not specified in (\ref{avm:nonperf}) again. 
 
 \type{non-perfective-verbal-reduplication-lr} has \type{aa-lr} and \type{a-yi-a-lr} as direct subtypes.
 (\ref{avm:AA}) and (\ref{avm:AyiA}) show \type{aa-lr} and \type{a-yi-a-lr}, respectively.
@@ -90,24 +91,26 @@ and because of (\ref{avm:nonperf}), no extra material is appended to the \textsc
 and the list containing the \type{delimitative-rel}.
  In addition to the inherited constraints,
 \type{aa-lr} and \type{a-yi-a-lr} specify the phonology of the output differently.
-\type{aa-lr} determines that the \etag between the two phonological copies in (\ref{avm:redup}) is empty, 
+\type{aa-lr} determines that the \etag between the two phonological copies in (\ref{avm:redup}) is the empty list, 
 whereas \type{a-yi-a-lr} specifies this list of phonological material as \phonliste{ yi }:
 
 \ea\label{avm:constr-AA}
 Constraints on lexical rules of type \type{aa-lr} and \type{a-yi-a-lr}:
 %\begin{tabular}{@{}l@{\hspace{2cm}}l@{}}
  \ea   \type{aa-lr} \impl \\%& 
-    \scalebox{.9}{%
+  %  \scalebox{.9}{%
         \avm{
             [phon & \1 $\oplus$ \1\\
             lex-dtr & [phon & \1] ]
-    }} %& 
+    }
+%} %& 
 \ex	\type{a-yi-a-lr} \impl\\
-     \scalebox{.9}{%
+ %    \scalebox{.9}{%
         \avm{
             [phon & \1 $\oplus$ \phonliste{ yi } $\oplus$ \1\\
             lex-dtr & [phon & \1] ]
-    }}
+    }
+%}
 %\end{tabular}
 \z
 \z
@@ -118,7 +121,7 @@ The lexical rules with all inherited constraints are given in (\ref{avm:AA}) and
 
 \ea\label{avm:AA}
 The AA lexical rule with all constraints inherited from the supertypes:
-\scalebox{.9}{%
+%\scalebox{.9}{%
     \avm{
         [\type*{aa-lr}\\
         phon & \1 $\oplus$ \1\\
@@ -133,12 +136,13 @@ The AA lexical rule with all constraints inherited from the supertypes:
             ind  & \3 ]]}\\
         rels & \4]
         ]
-}}
+}
+%}
 \z
 
 \ea\label{avm:AyiA}
 The A-\textit{yi}-A lexical rule with all constraints inherited from the supertypes:
-\scalebox{.9}{%
+%\scalebox{.9}{%
     \avm{
         [\type*{a-yi-a-lr}\\
         phon & \1  $\oplus$ \phonliste{ yi } $\oplus$ \1\\
@@ -153,7 +157,8 @@ The A-\textit{yi}-A lexical rule with all constraints inherited from the superty
             ind  & \3 ]]}\\
         rels & \4]
         ]
-}}
+}
+%}
 \z
 
 \type{v-le-lr} is a direct subtype of the \type{perfective-lr}.
@@ -171,23 +176,24 @@ Further, it accounts for the change in semantics by appending the \textsc{rels} 
 
 \ea\label{avm:pfv-old}
 Perfective lexical rule adapted from \citet[246]{MuellerLipenkova2013}:\\
-\scalebox{.9}{%
+%\scalebox{.9}{%
     \avm{
         [\type*{perfective-lr}\\
         phon & \1 \+ \phonliste{ le }\\
-        \punk{synsem\textbar cont}{ [ ltop & \2\\
+        \punk{synsem\textbar loc\textbar cont}{ [ ltop & \2\\
             ind & \3 ]}\\ 
         rels & <[\type*{perfective-rel}\\
         lbl  & \2\\
         arg0 & \3\\
-        arg1 & \4]> \+ \5\smallskip\\
+        arg1 & \4]> \,\+\, \5\smallskip\\
         lex-dtr & [phon & \1\\
         \punk{synsem\textbar loc}{[cat & [ head & verb]\\
             cont & [ ltop & \4\\
             ind & \3]]}\\
         rels & \5]
         ]
-}}
+}
+%}
 \z
 The event variables \iboxb{3} of the input and the output verb are shared. 
 The \textsc{ltop} of the output of the lexical rule \iboxb{2} is the label of the perfective relation, 
@@ -209,11 +215,11 @@ The \textsc{phon} value of the output makes it possible for further phonological
 
 \ea\label{avm:pfv-new}
 Type constraints on the type \type{perfective-lr} from which other subtypes inherit:\\
-\scalebox{.9}{%
+%\scalebox{.9}{%
     \avm{
         [\type*{perfective-lr}\\
         phon & \etag $\oplus$ \phonliste{ le } $\oplus$ \etag\\
-        \punk{synsem\textbar cont}{ [ltop & \2\\
+        \punk{synsem\textbar loc \textbar cont}{ [ltop & \2\\
             ind  & \3]}\\ 
         rels & <[\type*{perfective-rel}\\
         lbl  & \2\\
@@ -225,10 +231,11 @@ Type constraints on the type \type{perfective-lr} from which other subtypes inhe
             ind  & \3]]}\\
         rels & \5]
         ]
-}}
+}
+%}
 \z
 
-\type{v-le-lr} as given in (\ref{avm:vle}) inherits from \type{perfective-lr} and specifies that the first element in the output \textsc{phon} list is identified with the \textsc{phon} value of the input verb
+\type{v-le-lr} with all inherited constraints as given in (\ref{avm:vle}) inherits from \type{perfective-lr} and specifies that the first element in the output \textsc{phon} list is identified with the \textsc{phon} value of the input verb
 and that nothing else comes after \phonliste{ le }.
 Furthermore, no other list can be appended at the end of the \textsc{rels} list of the output anymore.
 This corresponds to the proposal of \citet[246]{MuellerLipenkova2013} shown in (\ref{avm:pfv-old}), 
@@ -236,21 +243,22 @@ which accounts for the simple perfective marking of verbs.
 
 \ea\label{avm:vle}
 Structure of type \type{v-le-lr} with constraints inherited from \type{perfective-lr}:\\
-\scalebox{.9}{%
+%\scalebox{.9}{%
     \avm{
         [\type*{v-le-lr}\\
         phon & \1 $\oplus$ \phonliste{ le }\\
-        \punk{synsem\textbar cont\textbar ltop}{ \2}\\ 
+        \punk{synsem\textbar loc \textbar cont\textbar ltop}{ \2}\\ 
         rels & <[\type*{perfective-rel}\\
         lbl  & \2\\
         arg0 & \3\\
         arg1 & \4]> $\oplus$ \5\smallskip\\
         lex-dtr & [phon & \1\\
-        cat  & [ head & verb\\
+        synsem\textbar loc \textbar cat  & [ head & verb\\
         cont & [ltop & \4\\
         ind & \3]]\\
         rels & \5]]
-}}
+}
+%}
 \z
 
 \type{perfective-reduplication-lr} inherits from both \type{verbal-reduplication-lr} and \type{per\-fec\-tive\hyp{}lr}.
@@ -266,11 +274,11 @@ and this shared label is embedded under the \type{perfective-rel}.
 Perfective and reduplication combined: type \type{perfective-reduplication-lr} with
 constraints inherited from \type{perfective-lr} and \type{verbal-reduplication-lr}:
 %\resizebox{\linewidth}{!}{
-    \scalebox{.9}{%
+ %   \scalebox{.9}{%
         \avm{
             [\type*{perfective-reduplication-lr}\\
             phon & \1 $\oplus$ \phonliste{ le } $\oplus$ \etag $\oplus$ \1\\
-            \punk{synsem\textbar cont\textbar ltop}{ \2}\\ 
+            \punk{synsem\textbar loc \textbar cont\textbar ltop}{ \2}\\ 
             rels & <[\type*{perfective-rel}\\
             lbl & \2\\
             arg0 & \3\\
@@ -285,7 +293,8 @@ constraints inherited from \type{perfective-lr} and \type{verbal-reduplication-l
             ind  & \3]]\\
             rels & \5]
             ]
-    }}
+    }
+%}
     %}
 \z
 For example (\ref{ex-he-tasted-the-soup-a-little-bit}), repeated here as (\ref{ex-he-tasted-the-soup-a-little-bit2}), we get the  MRS representation in (\ref{ex:mrs-soup}),
@@ -311,22 +320,26 @@ Specifically, \type{a\hyp{}le\hyp{}yi\hyp{}a\hyp{}lr} specifies the middle phono
 
 \ea\label{avm:AleA}
 %\begin{tabular}{@{}l@{\hspace{2cm}}l@{}}
-\ea    \scalebox{.9}{%
+\ea    %\scalebox{.9}{%
+        \type{a-le-yi-a-lr} \impl\\
         \avm{
-            [\type*{a-le-yi-a-lr}\\
+            [%\type*{a-le-yi-a-lr}\\
             phon & \1 \+ \phonliste{ le, yi } \+ \1\\
             lex-dtr & [phon & \1
             ]
             ]
-    }}%&
-\ex    \scalebox{.9}{%
+    }
+%}%&
+\ex   % \scalebox{.9}{%
+    \type{a-le-a-lr} \impl\\
         \avm{
-            [\type*{a-le-a-lr}\\
+            [%\type*{a-le-a-lr}\\
             phon & \1 \+ \phonliste{ le } \+ \1\\
             lex-dtr & [phon & \1
             ]
             ]
-    }}
+    }
+%}
 %\end{tabular}
 \z
 \z
@@ -339,22 +352,22 @@ as long as the input verb is disyllabic.
 Notice that  the lexical rules above also produce AB-\textit{yi}-AB and AB\hyp{}\textit{le}\hyp{}\textit{yi}\hyp{}AB for disyllabic input verbs.
 Although these forms are generally considered unacceptable \citetext{\citealp[160]{BascianoMelloni2017}, \citealp[275--276]{Hong1999}, \citealp[30]{LiThompson1981}, \citealp[239]{YangWei2017}}, 
 \citet[269]{Fan1964} and \citet[143]{Sui2018} considered AB-\textit{yi}-AB and AB-\textit{le}-\textit{yi}-AB to be possible, even though they both recognized that these two forms are rare.
-Indeed, a few examples of AB\hyp{}\emph{yi}\hyp{}AB and AB\hyp{}\emph{le}\hyp{}\emph{yi}\hyp{}AB in Early Mandarin (12th to 20th centuries) (\ref{ex:AByiAB-lu})--(\ref{ex:AByiAB-pu}) and Modern Mandarin (\ref{ex:AByiAB-rou1})--(\ref{ex:ABleyiAB-ccl}) were found.
+Indeed, a few examples of AB\hyp{}\emph{yi}\hyp{}AB and AB\hyp{}\emph{le}\hyp{}\emph{yi}\hyp{}AB in Early Mandarin (12th to 20th centuries) (\ref{ex:AByiAB-lu}--\subref{ex:AByiAB-pu}) and Modern Mandarin (\ref{ex:AByiAB-rou1}--\subref{ex:ABleyiAB-ccl}) were found.
 
 \footnotetext[17]{\textit{Yuanqu xuan: Luzhailang [Selected Yuanqu: Luzhailang]}, as cited in \citet[15]{Zhang2000}}
 \footnotetext[18]{\textit{Yuan Ming juan: Piaotongshi [Yuan and Ming volume: Piaotongshi]}, 308, as cited in \citet[15]{Zhang2000}}
 \footnotetext[19]{Rou, Shi. 1975. \textit{Roushi xiaoshuo xuanji [Selected novels of Roushi]}, 31. Beijing: People's Literature Publishing House.}
-\footnotetext[20]{Li, Jieren. 1962. \textit{Da bo [Great wave]}, 3rd band, 171. Beijing: The Writers Publishing House.}
+\footnotetext[20]{Li, Jieren. 1962. \textit{Da bo [Great wave]}, vol. 3, 171. Beijing: The Writers Publishing House.}
 \ea\label{ex:ABleyiAB}
 \ea\label{ex:AByiAB-lu}
 \gll ni yu wo \textit{zhengli-yi-zhengli}.\footnotemark\\
 you let me arrange-one-arrange\\
-\glt `Let me arrange it a little bit!''
+\glt `Let me arrange it a little bit!'
 
 \ex\label{ex:AByiAB-pu}
 \gll ni \textit{dating-yi-dating}.\footnotemark\\
 you inquire-one-inquire\\
-\glt `Inquire about it a little bit!''
+\glt `Inquire about it a little bit!'
 
 \ex\label{ex:AByiAB-rou1}
 \gll ge ge dian-tou \textit{weixiao-yi-weixiao}.\footnotemark\\
@@ -373,7 +386,7 @@ very seriously \textsc{de} \textsc{ba} nearsighted glasses straighten-\textsc{pf
 
 \ex\label{ex:ABleyiAB-ccl}
 \gll jiduo sanluan-zhe de chuan li de dengguang, ye huyinhumie de \textit{bianhuan-le-yi-bianhuan} weizhi.\\
-many scattered-\textsc{dur} \textsc{de} boat in \textsc{de} light also flicker \textsc{de} change-\textsc{pfv}-one-chang position\\ \jambox{(CCL)}
+many scattered-\textsc{dur} \textsc{de} boat in \textsc{de} light also flicker \textsc{de} change-\textsc{pfv}-one-chang position\\ \hfill {(CCL)}
 \glt `Many scattered lights in the boats also changed their positions a little bit, flickering.'
 \z
 \z
@@ -398,27 +411,27 @@ A sample is listed in (\ref{ex:AyiAkan}).
 \ea\label{ex:AyiAkan}
 \ea
 \gll teyi gongneng de yanjiuzhe-men bufang ruci \textit{shi-yi-shi-kan} \ldots\\
-special power \textsc{de} researcher-\textsc{pl} may.as.well such try-one-try-look\\ \jambox{(CCL)}
+special power \textsc{de} researcher-\textsc{pl} may.as.well such try-one-try-look\\ \hfill {(CCL)}
 \glt `Researchers of special power may as well have a try as such as see \ldots'
 
 \ex 
 \gll danshi dui fa mei fa-guo hege-zheng, yijing shuo bu qing le, xuyao \textit{cha-yi-cha-kan}.\\
-but about issue not issue-\textsc{exp} conformity-certificate already say not clealy \textsc{ptc} need check-one-chek-look\\ \jambox{(CCL)}
+but about issue not issue-\textsc{exp} conformity-certificate already say not clealy \textsc{ptc} need check-one-chek-look\\ \hfill {(CCL)}
 \glt `But one already cannot say it clearly anymore, whether a certificate of conformity is issued or not. One needs to have a check and see.'
 
 \ex
 \gll rang wo lai \textit{cai-yi-cai-kan}.\\
-let I come guess-one-guess-look\\ \jambox{({CCL})}
+let I come guess-one-guess-look\\ \hfill {({CCL})}
 \glt `Let me have a guess.'
 
 \ex
 \gll da-laoban-men yao \textit{deng-yi-deng-kan}\\
-big-boss-\textsc{pl} need wait-one-wait-look\\ \jambox{(CCL)}
+big-boss-\textsc{pl} need wait-one-wait-look\\ \hfill {(CCL)}
 \glt `Big bosses need to wait a little bit and see.'
 
 \ex
 \gll furen ni dao \textit{shu-yi-shu-kan}, zhe zhu hua de huaduo gong you ji zhong yanse.\\
-madam you just count-one-count-look this \textsc{clf} flower \textsc{de} blossom in.total have how.many \textsc{clf} color\\ \jambox{(CCL)}
+madam you just count-one-count-look this \textsc{clf} flower \textsc{de} blossom in.total have how.many \textsc{clf} color\\ \hfill {(CCL)}
 \glt `Madam, just try to count and see how many colors the blossom of this flower has in total.'
 \z
 \z

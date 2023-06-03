@@ -8,9 +8,9 @@ This section will review these analyses and will discuss their advantages and sh
 
 
 %%%%%%%%%%%
-\subsection{The reduplicant as a verbal classifier}\label{sec:clf}
+\subsection{The reduplication as a verbal classifier phrase}\label{sec:clf}
 
-\citet{Chao1968}, \citet{Fan1964} and \citet{Xiong2016} analyzed the reduplication in Mandarin Chinese
+\citet{Fan1964}, \citet{Chao1968} and \citet{Xiong2016} analyzed the reduplication in Mandarin Chinese
 as a verbal classifier phrase\footnote{Alternative terms for \textit{verbal classifier}: \textit{measure for verbs of action} in \citet{Chao1968} or \textit{cognate object} in \citet{Chao1968, Hong1999}.
 The \textit{verbal classifier phrase}  is also termed \textit{quantity adverbial} in \citet{LiThompson1981} or \textit{frequency phrase} in \citet{Huangetal2009}.}.
 A verbal classifier is ``a measure for verbs of action expresses the number of times an action takes place” \citep[615]{Chao1968}, such as the \textit{ci} in (\ref{ex:clf}). 
@@ -18,7 +18,7 @@ A verbal classifier is ``a measure for verbs of action expresses the number of t
 %\settowidth\jamwidth{(Chomsky, 1957: 15)}
 \ea\label{ex:clf}
 \gll mei che guo yi ci huang\\
-not tell \textsc{exp} one \textsc{clf} lie\\ \jambox{\citep[616]{Chao1968}}
+not tell \textsc{exp} one \textsc{clf} lie\\ \hfill {\citep[616]{Chao1968}}
 \glt `haven't told lie once'
 \z
 
@@ -127,11 +127,10 @@ due to its delimitative aspectual meaning.
  
  \citet{Arcodiaetal2014} and \citet{BascianoMelloni2017} analyzed the reduplication within the
 framework of First Phase Syntax \citep{Ramchand2008}.
-
 \citet{Ramchand2008} proposed that an event is comprised of the following phrases: 
 the causative subevent (\textit{init}P), the process subevent (\textit{proc}P) and the result subevent (\textit{res}P), which are ordered hierarchically, as illustrated in \figref{tree:ramchand}.\footnote{
 The present study does not argue for a {NP} or a {DP} analysis and simply takes over the illustration provided in the cited papers.}
-Dynamic and volitional verbs have the features [init proc] and are therefore located unter \textit{init} and \textit{proc}  \citetext{\citealp[24]{Arcodiaetal2014}; \citealp[147]{BascianoMelloni2017}}.  
+Dynamic and volitional verbs have the features [init proc] and are therefore located under \textit{init} and \textit{proc}  \citetext{\citealp[24]{Arcodiaetal2014}; \citealp[147]{BascianoMelloni2017}}.  
 Achievement verbs possess the feature [res] and reside under \textit{res}  \citetext{\citealp[24]{Arcodiaetal2014}; \citealp[147]{BascianoMelloni2017}}. 
 Stative verbs do not contain a \textit{proc}P \citep[152]{BascianoMelloni2017}.
 
@@ -169,7 +168,7 @@ This analysis correctly predicts that the reduplication of achievement verbs and
 However, as shown in \sectref{sec:Aktionsarten}, the reduplication of states and achievements is unusual but not impossible.
 This suggests that the reduced acceptability of reduplicated achievement and stative verbs is semantic rather than structural. 
 Their use is possible in specific contexts and should not be ruled out syntactically.
-Consequently, this proposal does not seem to offer an appropriate account for the reduplication.
+Consequently, this proposal does not seem to offer an appropriate account for  reduplication.
  
  
  
@@ -177,7 +176,7 @@ Consequently, this proposal does not seem to offer an appropriate account for th
  %%%%%%
  %YangWei2017, Tsai2008
  
- \citet{YangWei2017} endorsed the analysis of the reduplication as an aspect marker following the structure of Mandarin Chinese aspects proposed by \citet{Tsai2008}.
+ \citet{YangWei2017} endorsed the analysis of  reduplication as an aspect marker following the structure of Mandarin Chinese aspects proposed by \citet{Tsai2008}.
  
 \citet{Tsai2008} provided the syntactic analysis for aspect markers in Mandarin Chinese as shown in \figref{tree:tsai}.\footnote{Asp = Aspect}
 He observed that  \textit{zhe} `\textsc{prog}', \textit{le} `\textsc{pfv}' and \textit{wan} `\textsc{compl}' necessarily occur with additional information about the event denoted by the sentence (\ref{ex:incomplete}), 
@@ -217,7 +216,7 @@ He thus proposed three aspect positions under TP. \textit{zai} and \textit{guo} 
 \end{figure}
 
 Turning to reduplication, it cannot occur without additional information as well (\ref{ex:redup-tsai}).
-Based on this, the reduplicant should reside under Asp$_2$.
+Based on this, the reduplicant should reside under Asp$_2$, as illustrated in \figref{tree:redupasp}.
 
 \ea\label{ex:redup-tsai}
 \ea[*] {\gll ta \textit{xiao}-\textit{xiao}\\
@@ -227,13 +226,33 @@ he laugh-\textsc{pfv}-laugh\\
 \glt `He laughed a little.'}
 \ex[] {\gll ta \textit{xiao}-\textit{xiao}, bu shuohua\\
 he laugh-laugh not speak\\
-\glt `He laughed a little, didn't speak.'}\label{ex:redup-tsai-co}
+\glt `He laughed a little, and didn't speak.'}\label{ex:redup-tsai-co}
 \z
 \z
 
+\begin{figure}
+    \centering
+    \begin{forest}
+        [TP [T]
+        [...
+        [AspP$_1$ (outer aspect) [Asp$_1$\\zai/guo]
+        [\textit{v}P [\textit{v}]
+        [AspP$_2$ (middle aspect) [Asp$_2$\\zhe/le/reduplication]
+        [VP [V-Asp$_3$ (inner aspect)\\wan]
+        ]
+        ]
+        ]
+        ]
+        ]
+        ]
+    \end{forest}
+    \caption{Position of reduplication according to the aspectual system in \citet{Tsai2008}}
+    \label{tree:redupasp}
+\end{figure}
+
 This analysis would result in a mismatch between syntax and semantics. 
-Even though reduplication, \textit{le} and \textit{guo} all mark perfective aspects (\sectref{sec:aspM}, \citealt{Dai1997, XiaoMcEnery2004}),
-\textit{guo} is situated under Asp$_1$ while \textit{le} and the reduplication are under Asp$_2$.
+Even though \textit{le}, \textit{guo} and reduplication all mark perfective aspects (\sectref{sec:aspM}, \citealt{Dai1997, XiaoMcEnery2004}),
+\textit{guo} is situated under Asp$_1$ while \textit{le} and the reduplication are under Asp$_2$, as can be seen from \figref{tree:redupasp}.
 
 In sum, both analyses of the reduplicant as an aspect marker do not seem to be convincing.
 
@@ -372,9 +391,9 @@ As for the other forms of reduplication, A-\textit{le}-A can be viewed as two co
 Furthermore, the \textit{yi} in A-\textit{yi}-A and A-\textit{le}-\textit{yi}-A can simply be viewed as a dangling phonological unit. 
 In this case, \phonliste{ yi } is neither coindexed with a syntactic unit nor with a semantic one.
 
-This analysis correctly captures the fact that the addition of \textit{yi} does not change the syntactic and semantic behaviors of the reduplication.
+This analysis correctly captures the fact that the addition of \textit{yi} does not change the syntactic and semantic behavior of the reduplication.
 It also provides a formal account for the phonology of the reduplication.
-On the other hand, by assuming a construction specially for the reduplication, this approach fails to account for the similarities of the reduplication and other aspect markers in Mandarin Chinese, unlike the affixation analyses described in \sectref{sec:asp}.
+Nevertheless, by assuming a construction specially for the reduplication, this approach fails to account for the similarities of the reduplication and other aspect markers in Mandarin Chinese, unlike the affixation analyses described in \sectref{sec:asp}.
 
  
  
@@ -454,7 +473,7 @@ Furthermore, this account can only deal with monosyllabic reduplication and hand
 This is not true. 
 \citet{BascianoMelloni2017}, \citet{MelloniBasciano2018},  \citet{Xing2000stat} and  \citet{Xie2020}  all considered both AA and ABAB to be productive,
 and \citet{Xing2000stat} concluded that AAB is productive as well.
-Thus, these forms should not be handled as  irregular forms, but should be derivable from lexical rules.
+Thus, these forms should not be handled as  irregular forms, but should be derivable by lexical rules.
 
 
  

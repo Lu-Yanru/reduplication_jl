@@ -4,7 +4,9 @@
 % refs
 \newcommand{\sectref}[1]{Section~\ref{#1}}
 \newcommand{\figref}[1]{Figure~\ref{#1}}
-\newcommand{\cioktegen}[2][]{\citeauthor{#2}'s (\citeyear*[#1]{#2})}
+\newcommand{\citegen}[2][]{\citeauthor{#2}'s (\citeyear*[#1]{#2})}
+
+\renewcommand{\subref}[1]{\StrRight{\getrefnumber{#1}}{1}}
 
 %%% Linguistics graphs related
 %% indexed box
