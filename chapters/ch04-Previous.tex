@@ -402,11 +402,17 @@ Nevertheless, by assuming a construction specially for the reduplication, this a
  %%%%%%%%%%%%%%
  %FanSongBond2015
  
-\citet{FanSongBond2015} provided a unified HPSG analysis for the reduplication of both verbs and adjectives in Mandarin Chinese.
+\citet*{FanSongBond2015} provided a unified HPSG analysis for the reduplication of both verbs and adjectives in Mandarin Chinese.
 They considered reduplication to be a morphological process and modeled it via lexical rules.
 They provided the lexical rule (\ref{avm:fsb-redup}) for reduplication in general,
 and further proposed \type{redup-a-lr} and \type{redup-v-lr} as subtypes of \type{redup-type}, 
-as illustrated in (\ref{avm:fsb-redup-a}) and (\ref{avm:fsb-redup-v}) respectively.
+as illustrated in (\ref{avm:fsb-redup-a}) and (\ref{avm:fsb-redup-v}) respectively.\footnote{%
+  Note that the format in which the lexical rule is given is not the input--output format usually
+  used for lexical rules in HPSG. Instead it is depicted as a unary branching phrase structure
+  rule: the input is the daughter on the right-hand side of the rule. The output is the mother on
+  the left-hand side. The view of lexical rules as unary branching rules is adopted in most current work on
+  lexical rules \citep{BC99a,Meurers2001a} despite the notation that is commonly assumed.  
+}
 For them, the reduplication functions as an intensifier predicate, as represented in the \textsc{predicate (pred)} in the \textsc{constructional-content (c-cont)}.
 The \type{intensifier\_x\_rel} has two subtypes: \type{redup\_up\_x\_rel} for the amplifiying meaning of adjectival reduplication and \type{redup\_down\_x\_rel} for the delimitative meaning of verbal reduplication.
 The orthography is handled separately.
@@ -482,3 +488,4 @@ Thus, these forms should not be handled as  irregular forms, but should be deriv
 The shortcomings of previous analyses lead us to propose a new analysis on verbal reduplication with {HPSG}, 
 that formalizes the phonology of the reduplication, resolves the problem of \textit{yi} and preserves the generalization on aspect marking, 
 as we will elaborate in \sectref{sec:analysis}. 
+

@@ -1,20 +1,26 @@
 \section{A new HPSG analysis}\label{sec:analysis}
 
 In what follows, we suggest a new lexical-rule-based analysis of aspect marking and reduplication
-using Minimal Recursion Semantics (MRS; \citealt{Copestakeetal2005}).%, as proposed in \citet{LuMueller2021}.
+using Minimal Recursion Semantics (MRS; \citealt{Copestakeetal2005}). %, as proposed in \citet{LuMueller2021}.
+MRS uses lists of elementary predications that are connected via pointers. Scope constraints are
+represented by statements of domination. This allows for elegant ways to underspecify scope. The
+details cannot be discussed here. The interested reader is referred to \citet{Copestakeetal2005}. In
+what follows we will present the elementary predications with the features assumed in MRS, but leave
+out handle constraints to keep things simple.
 
-The implicational constraint in  (\ref{avm:redup}) shows the constraints on all structures of type
-\textit{verbal-reduplication-lr} for Mandarin Chinese. 
-Such structures take a verb as \textsc{lexical-daughter (lex-dtr)}.  
-The output reduplicates the \textsc{phonology (phon)} of the input verb with the possibility to have further phonological material in between.
-\etag{} indicates an underspecified list which could be empty or not. 
-A delimitative relation is appended to the \textsc{relations (rels)} value of the input verb, 
-and it takes the event index of the input verb as argument. 
-The label of the output \iboxb{2} is identified with the label of the input and with the label of the delimitative relation, 
-hence \type{delimitative-rel} is treated as a modifier.
- Further relations can be added at the beginning of the \textsc{rels} list to allow for
-the additional perfective meaning in A-\textit{le}-A and A-\textit{le}-\textit{yi}-A. 
-The combination with the perfective will be elaborated on in the following paragraphs.
+Like \citet{FanSongBond2015}, we assume lexical rules for reduplication. Our lexical rules are
+organized in an inheritance network. \textit{verbal-reduplication-lr} is the most general type for
+reduplication lexical rules in this network and the implicational constraint in (\ref{avm:redup}) shows the constraints on all
+structures of type \textit{verbal-reduplication-lr}. Such structures take a verb as
+\textsc{lexical-daughter (lex-dtr)}.  The output reduplicates the \textsc{phonology (phon)} of the
+input verb with the possibility to have further phonological material in between.  \etag{} indicates
+an underspecified list which could be empty or not.  A delimitative relation is appended to the
+\textsc{relations (rels)} value of the input verb, and it takes the event index of the input verb as
+argument.  The label of the output \iboxb{2} is identified with the label of the input and with the
+label of the delimitative relation, hence \type{delimitative-rel} is treated as a modifier.  Further
+relations can be added at the beginning of the \textsc{rels} list to allow for the additional
+perfective meaning in A-\textit{le}-A and A-\textit{le}-\textit{yi}-A.  The combination with the
+perfective will be elaborated on in the following paragraphs.
 
 \ea
 \type{verbal-reduplication-lr} \impl\\
@@ -455,4 +461,8 @@ This account makes use of a semantic mechanism, which correctly rules out aspect
 By providing a semantic explanation, this mechanism seems less \textit{ad hoc} than the one used in \citet{FanSongBond2015}, which simply assumed that the reduplication cannot combine with aspect information.
 The present approach also has a broader coverage of the forms of verbal reduplication than the one in \citet{FanSongBond2015}.
 Furthermore, all the forms are derivable from the lexical rules proposed here, so that there is no need to resort to irregular lexicon entries, and the productivity of these forms is correctly captured.
-In sum, the analysis proposed in this paper possesses greater explanatory power and resolves the problems of previous studies.
+In sum, the analysis proposed in this paper possesses greater explanatory power and resolves the
+problems of previous studies.
+
+
+%      <!-- Local IspellDict: en_US-w_accents --> 
