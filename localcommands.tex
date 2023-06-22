@@ -50,3 +50,13 @@
 }
 
 \newcommand{\impl}{$\Rightarrow$\xspace}
+
+
+\makeatletter
+\def\eas{\ifnum\@xnumdepth=0\begin{exe}[(34)]\else\begin{xlist}[iv.]\fi\ex\begin{tabular}[t]{@{}p{\linewidth}@{}}}
+\def\zs{\end{tabular}\ifnum\@xnumdepth=1\end{exe}\else\end{xlist}\fi}
+\makeatother
+
+
+%\def\ea{\ifnum\@xnumdepth=0\begin{exe}[(234)]\else\begin{xlist}[iv.]\fi\ex}
+%\def\z{\ifnum\@xnumdepth=1\end{exe}\else\end{xlist}\fi}
