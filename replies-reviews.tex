@@ -4,29 +4,42 @@
 \documentclass[fleqn,twoside]{article}
 
 
+\usepackage[
+style = langsci-unified,
+backend = biber,
+natbib = true,
+]{biblatex}
+\addbibresource{Bib.bib}
 
-\usepackage{fontspec}
-
-\usepackage{hyperref}
-\hypersetup{colorlinks=false, pdfborder={0 0 0}}
-
-\usepackage{unified-biblatex}
-
-\let\citew\citealp
-\newcommand{\page}{}
-\bibliography{Bib,bib-abbr,biblio}
+\usepackage{xcolor}
+\definecolor{lsDOIGray}{cmyk}{0,0,0,0.45}
 
 
-\usepackage{langsci-forest-setup}
 
-\usepackage{german}%
+\input{localpackages}
+\input{localcommands}
+%\usepackage{fontspec}
 
-\selectlanguage{USenglish}
+%\usepackage{hyperref}
+%\hypersetup{colorlinks=false, pdfborder={0 0 0}}
 
-\usepackage{abbrev,merkmalstruktur,article-ex,makros.2e,mycommands,eng-date,my-xspace}
-\usepackage{my-gb4e-article}
+%\usepackage{unified-biblatex}
 
-\usepackage{soul}
+%\let\citew\citealp
+%\newcommand{\page}{}
+%\bibliography{Bib,bib-abbr,biblio}
+
+
+%\usepackage{langsci-forest-setup}
+
+%\usepackage{german}%
+
+%\selectlanguage{USenglish}
+
+%\usepackage{abbrev,merkmalstruktur,article-ex,makros.2e,mycommands,eng-date,my-xspace}
+%\usepackage{my-gb4e-article}
+
+%\usepackage{soul}
 
 %\usepackage{forest}
 
@@ -66,7 +79,7 @@ and situation types (the interaction of verb classes and other constituents) at 
 The verb classes are determined with verbs in a neutral context (preferably in a perfective viewpoint aspect, with a simple object only when it is obligatory), 
 where everything that might change the aspectual value of a verb is excluded
 and only the inherent features of the verb itself are considered
-(see \citealt[52]{XiaoMcEnery} for more details).
+(see \citealt[52]{XiaoMcEnery2004} for more details).
 This does not rule out the fact that the same verb may express different aspectual properties in other contexts,
 but its verb class remains the same,
 as the aspectual change can be attributable to other components at the sentential level.
@@ -91,9 +104,9 @@ However, as the reviewer %\citealt[283]{Ding2010}, \citealt[fn. 3]{BascianoMello
 and indeed \citet[669--670]{Tham2013} herself noted,
 verbs expressing psychological states such as these can have a COS interpretation (but not necessarily),
 let us look at other examples of stative verbs listed by \citet[680]{PeckEtAl2013} which do not express psychological states,
-and examples in  \citet[Sec. 3.3.3]{XiaoMcEnery} of individual-level states (ILSs) which only have stative interpretation,
+and examples in  \citet[Sec. 3.3.3]{XiaoMcEnery2004} of individual-level states (ILSs) which only have stative interpretation,
 as opposed to stage-level states (SLSs) which can have both stative and dynamic interpretations.\footnote{
-Note that most examples of ILSs in \citet[Sec. 3.3.3]{XiaoMcEnery} are adjectives.
+Note that most examples of ILSs in \citet[Sec. 3.3.3]{XiaoMcEnery2004} are adjectives.
 Since in Mandarin Chinese, adjectives have a different reduplication pattern (see e.g. \citealt[Sec. 2.2]{Tsao2001}, \citealt[Sec. 4.1]{FanSongBond2015}, \citealt[Sec. 3]{Sui2018}),
 and further, COS verbs can be systematically derived from adjectives \citep[Sec. 3]{Tham2013}, 
 these predicates are not included in our examples.}
@@ -107,7 +120,7 @@ Applying the classic ``for/in X-time'' test, reduplication is compatible with ``
 b 两天后到附近市场买买东西
 c *到附近市场买买东西两天
 The following continuation that cancels the telo is also infelicitous ().
-() 到附近市场买买东西 # 但什么也没买到
+() 到附近市场买买东西 \# 但什么也没买到
 
 All the examples above show that reduplication is applicable to all verb classes, contrary to common beliefs in the literature,
 and thus, a theoretical account of reduplication should not restrict its use to only a subset of verbs.
@@ -131,7 +144,7 @@ the reduplication is incompatible with an expression that quantifies the duratio
  This results from the properties of reduplication and does not change the verb class of the predicate.
  
 Due to its unique features compared to the perfective aspect marker \textit{le} and the experiential aspect marker \textit{guo},
-the reduplication is the only perfective viewpoint aspect that can freely occur in future situations \citep[156--157]{XiaoMcEnery}.
+the reduplication is the only perfective viewpoint aspect that can freely occur in future situations \citep[156--157]{XiaoMcEnery2004}.
 \textit{Le} expresses a situation being realized, 
 while \textit{guo} conveys a situation already experienced,
 and thus, both rarely occur in future situations.
@@ -237,7 +250,7 @@ reduplication, i.e. contrastive focus reduplication/repetition, which involves t
 words and sometimes phrases (Oh, we re not LIVING-TOGETHER-living-together, Gomeshi et al. 2004: 308). Their function is “to focus the denotation of the reduplicated element on a more sharply delimited, more specialized, range” (Gomeshi etal. 2004: 308); for example, in ex. (47) cited by the author(s) SALAD-salad means green salad vs. salads in general. This has nothing to do with diminishing verbal reduplication in Mandarin. The authors’ endeavor to apply the analysis proposed for contrastive focus reduplication to Mandarin verbal reduplication raises questions about its rationale (why? These two phenomena are fundamentally distinct and serve different linguistic functions). Consequently, attempting to employ the same analytical framework for both is problematic, and, indeed, the author(s) conclude(s) that: “this approach fails to account for the similarities of the reduplication and other aspect markers in Mandarin Chinese”. This is precisely because contrastive focus repetition/reduplication is a different phenomenon with a different function, and Mandarin verbal reduplication cannot be analyzed in the same way. Furthermore, the author(s) suggest(s) that this approach “[...] also provides a formal account for the phonology of the reduplication”. However, contrastive focus reduplication/repetition generally does not involve morpho-phonological readjustment phenomena, which are typically found in reduplication. As a result, it cannot adequately account for phenomena such as the neutral tone of the reduplicant in the case of reduplication of monosyllabic verbs (kan > kan kan).
 %%%%%%%%%%%%%%%%%%
 Answer:
-Since the reviewer deemed it irrelevant, the section concerning \citet{GomeshiEtAl2004} is removed.
+Since the reviewer deemed it irrelevant, the section concerning \citet{Ghomeshietal2004} is removed.
 
 %%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%
@@ -346,18 +359,19 @@ One of the key questions addressed in this paper pertains to whether verb redupl
 
 To further enrich the ongoing debate, I wonder whether the authors will consider the inclusion of examples that previous studies have identified as morphological verb reduplications. This addition would help demonstrate the broader scope and applicability of your analysis. Alternatively, it would be beneficial to clarify the reasons for selecting these specific forms in this article.  
 %%%%%%%%%%%%%%%%
-Answer: % need to think about this more
+Answer: 
+\citet{Xie2020} identifies the AABB form as morphological verb reduplication.
 Even though we do not agree with \citegen{Xie2020} claim that the distinction between ABAB and AABB lies in the distinction between morphology and syntax,
-we do agree that they are different grammatical processes and thus requires separate analyses.
-Also note that there are numerous scholars that do consider the forms above as morphological processes (cite xxxxxxxxxxxx).
-\citet[83--84]{Xie2020} also suggests that AABB is much less productive than ABAB.
+we do agree that they are different grammatical processes and thus requires separate analyses \citep[See also][]{Deng2013, Wang2023}.
+Also note that there are numerous scholars that do consider the forms analyzed here as morphological processes (\citealt[Ch. 4]{Chao1968}, \citealt[Ch. 3]{LiThompson1981}, \citealt[4--5]{Liao2014} and \citealt[Sec. 4]{Sui2018}).
+\citet[83--84]{Xie2020} further points out that AABB is much less productive than ABAB.
 This suggests that at least some AABB might not be formulated by rules but is stored in the lexicon as a whole.
 This is probably the case for those AABBs that have an idiomatic meaning, such as \textit{zhi-zhi-dian-dian} `point-point-gesture-gesture, gossip'.
-Productively formed AABBs can be accounted for by the current analysis as the reduplication happens before the compounding process,
-i.e. monosyllabic verbs are reduplicated separately (as AA and BB respectively) and then compounded together to form AABB.
-This is in line with the proposal in \citet[Sec. 4.2]{Wang2023},
-and also explains why some AABBs do not have a base AB form, such as \textit{zou-zou-ting-ting} `walk-walk-stop-stop, walk for a while and rest for a while', *\textit{zou-ting} `walk-stop'
-The current analysis has a broad scope in that it explains all forms of productively formed verbal reduplication, which previous analyses were not able to do.
+%Productively formed AABBs can be accounted for by the current analysis as the reduplication happens before the compounding process,
+%i.e. monosyllabic verbs are reduplicated separately (as AA and BB respectively) and then compounded together to form AABB.
+%This is in line with the proposal in \citet[Sec. 4.2]{Wang2023},
+%and also explains why some AABBs do not have a base AB form, such as \textit{zou-zou-ting-ting} `walk-walk-stop-stop, walk for a while and rest for a while', *\textit{zou-ting} `walk-stop'
+The current analysis has a broad scope in that it explains all forms of delimitative verbal reduplication, which previous analyses were not able to do.
 %%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%
 %% YL
