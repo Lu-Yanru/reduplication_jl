@@ -4,29 +4,42 @@
 \documentclass[fleqn,twoside]{article}
 
 
+\usepackage[
+style = langsci-unified,
+backend = biber,
+natbib = true,
+]{biblatex}
+\addbibresource{Bib.bib}
 
-\usepackage{fontspec}
+\usepackage{xcolor}
+\definecolor{lsDOIGray}{cmyk}{0,0,0,0.45}
 
-\usepackage{hyperref}
-\hypersetup{colorlinks=false, pdfborder={0 0 0}}
+\usepackage{csquotes}
 
-\usepackage{unified-biblatex}
+\input{localpackages}
+\input{localcommands}
+%\usepackage{fontspec}
 
-\let\citew\citealp
-\newcommand{\page}{}
-\bibliography{Bib,bib-abbr,biblio}
+%\usepackage{hyperref}
+%\hypersetup{colorlinks=false, pdfborder={0 0 0}}
+
+%\usepackage{unified-biblatex}
+
+%\let\citew\citealp
+%\newcommand{\page}{}
+%\bibliography{Bib,bib-abbr,biblio}
 
 
-\usepackage{langsci-forest-setup}
+%\usepackage{langsci-forest-setup}
 
-\usepackage{german}%
+%\usepackage{german}%
 
-\selectlanguage{USenglish}
+%\selectlanguage{USenglish}
 
-\usepackage{abbrev,merkmalstruktur,article-ex,makros.2e,mycommands,eng-date,my-xspace}
-\usepackage{my-gb4e-article}
+%\usepackage{abbrev,merkmalstruktur,article-ex,makros.2e,mycommands,eng-date,my-xspace}
+%\usepackage{my-gb4e-article}
 
-\usepackage{soul}
+%\usepackage{soul}
 
 %\usepackage{forest}
 
@@ -39,6 +52,7 @@
 \noindent
 {\large\bf Replies to reviews of \emph{An HPSG account for verbal reduplication in Mandarin Chinese}}
 
+\noindent
 Dear editors,
 
 Thank you very much for the positive reviews. The following text is a repetition of the points the
@@ -47,14 +61,18 @@ reviewers raised and an explanation of how we addressed open issues.
 \section{Reviewer 1}
 
 %%%%% YL
-Regarding the interaction with Aktionsart (Sec. 2.3.2), the author(s) conclude(s) that “This shows
+\begin{displayquote}
+Regarding the interaction with Aktionsart (Sec. 2.3.2), the author(s) conclude(s) that ``This shows
 that although the reduplication does have a tendency to interact with volitional verbs and with
 activities and semelfactives due to its dynamic meaning, this is by no means a rigid constraint, and
-non-volitional verbs, states and achievements can be reduplicated in appropriate contexts as well.” 
+non-volitional verbs, states and achievements can be reduplicated in appropriate contexts as well.''
 
-Regarding volitionality, it should be noted that, as reported in various grammars, while it is generally true that verbs describing events not controlled by an agent cannot be reduplicated, some of them, under certain circumstances (e.g. in imperative or conditional sentences, or in causative rang/jiao/shi sentences, as in ex. (15e) provided by the author(s)), can reduplicate (it might be worthwhile to delve into why this occurs in such sentence structures). As for the possibility of reduplicating stative verbs, this is limited to specific verbs and circumstances. It has been observed that some stative verbs, e.g. bing ‘be sick’, are basically change of state predicates, which means that they are dynamic (see e.g. Tham 2013: 663; see also Sybesma 1997, Liu 2010, Peck, Lin \& Sun 2013; Basciano 2019). The same goes for those verbs expressing psychological states which can have a dynamic interpretation, as e.g. liaojié “understand’ (Basciano \& Melloni 2017, fn. 3). With regard to achievements, it is worth considering whether, in certain circumstances (the cases in which they are reduplicated), they assume a reading that cancels the felos. Anyway, since these cases are not the rule, I do not think they can be taken as an argument against the constraints on the action type of the base verb. Otherwise, if reduplication does not affect lexical aspect, how can the changes in the aspect properties of the verb after reduplication be explained? (e.g. \& (1) — AN/ kan (le ) san ge xidoshi ‘read for three hours’ vs. *\& (1) \& =AW kan (le ) kan san ge xicioshi (both reduplication and for X time expressions set a boundary to the event) / IE{ETS zhéngzai kan / *EAEG TG zhéngzai kan kan). In order to get a clearer picture and to find a semantic explanation for these facts, one should look at what these ‘special’ cases of reduplication have in common and try to draw generalizations: why can some stative and achievement verbs reduplicate under certain circumstances, while other cannot? What do these verbs have in common? Can we single out specific subclasses of these verbs which can reduplicate? 
+Regarding volitionality, it should be noted that, as reported in various grammars, while it is generally true that verbs describing events not controlled by an agent cannot be reduplicated, some of them, under certain circumstances (e.g. in imperative or conditional sentences, or in causative \obj{rang/jiao/shi} sentences, as in ex. (15e) provided by the author(s)), can reduplicate (it might be worthwhile to delve into why this occurs in such sentence structures). As for the possibility of reduplicating stative verbs, this is limited to specific verbs and circumstances. It has been observed that some stative verbs, e.g. bing ‘be sick’, are basically change of state predicates, which means that they are dynamic (see e.g. Tham 2013: 663; see also Sybesma 1997, Liu 2010, Peck, Lin \& Sun 2013; Basciano 2019). The same goes for those verbs expressing psychological states which can have a dynamic interpretation, as e.g. liaojié `understand' (Basciano \& Melloni 2017, fn. 3). With regard to achievements, it is worth considering whether, in certain circumstances (the cases in which they are reduplicated), they assume a reading that cancels the felos. Anyway, since these cases are not the rule, I do not think they can be taken as an argument against the constraints on the action type of the base verb. Otherwise, if reduplication does not affect lexical aspect, how can the changes in the aspect properties of the verb after reduplication be explained? (e.g. \& (1) — AN/ kan (le ) san ge xidoshi ‘read for three hours’ vs. *\& (1) \& =AW kan (le ) kan san ge xicioshi (both reduplication and for X time expressions set a boundary to the event) / IEETS zhéngzai kan / *EAEG TG zhéngzai kan kan). In order to get a clearer picture and to find a semantic explanation for these facts, one should look at what these ‘special’ cases of reduplication have in common and try to draw generalizations: why can some stative and achievement verbs reduplicate under certain circumstances, while other cannot? What do these verbs have in common? Can we single out specific subclasses of these verbs which can reduplicate? 
+\end{displayquote}
+    
 %%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%
+\noindent
 Answer:
 First, the notion of ``aspect'' adopted in this article has to be explained in more detail.
 We adopt the two-component aspect model proposed by \citet{XiaoMcEnery2004} based on \citet{Smith1991}.
@@ -66,7 +84,7 @@ and situation types (the interaction of verb classes and other constituents) at 
 The verb classes are determined with verbs in a neutral context (preferably in a perfective viewpoint aspect, with a simple object only when it is obligatory), 
 where everything that might change the aspectual value of a verb is excluded
 and only the inherent features of the verb itself are considered
-(see \citealt[52]{XiaoMcEnery} for more details).
+(see \citealt[52]{XiaoMcEnery2004} for more details).
 This does not rule out the fact that the same verb may express different aspectual properties in other contexts,
 but its verb class remains the same,
 as the aspectual change can be attributable to other components at the sentential level.
@@ -77,37 +95,75 @@ but a detailed discussion has to be left for future research.
 
 Second, there are more examples.
 Regarding volitionality, although (15e) is a causative sentence, (13a--b) are not imperative, conditional or causative (more on this below).
-Example () shows the same verb sheng1 `give birth to' as in (15e) reduplicated in a declarative sentence.
-我们女人是这么神经质又没用，只能生生孩子，做做女人的活动.。(BCC)
+Example (\ref{ex:sheng}) shows the same verb \obj{sheng1} `give birth to' as in (15e) reduplicated in a declarative sentence.
+\ea\label{ex:sheng}%我们女人是这么神经质又没用，只能生生孩子，做做女人的活动.。(BCC)
+\gll \objex{wo2men} \objex{nv3ren2} \ldots\, \objex{zhi3} \objex{neng2} \obj{sheng1-sheng1} \objex{hai2zi} \ldots \\
+we women {} only can give.birth.to-give.birth.to child\\\jambox{(BCC)}
+\glt `We women can only give birth to children \ldots'
+\z
 
-As for stative verbs, \citet[Sec. 3.3]{Tham2013} uses xi3huan1 `like' and xiang1xin4 `believe' as examples of stative verbs
+As for stative verbs, \citet[Sec. 3.3]{Tham2013} uses \obj{xi3huan1} `like' and \obj{xiang1xin4} `believe' as examples of stative verbs
 to contrast adjectives
-and what she calls basic change of state verbs such as bing4 `sick'.
-\citet[680]{PeckEtAl2013} also list xi3huan1 `like' and xiang1xin4 `believe' as stative verbs.
-For these two verbs, examples such as () and () can be found.
-这车好型啊！！！。怎么了，我就喜欢喜欢 不行么~ (BCC)
-谁让我来相信相信 (CCL)
+and what she calls basic change of state verbs such as \obj{bing4} `sick'.
+\citet[680]{PeckEtAl2013} also list \obj{xi3huan1} `like' and \obj{xiang1xin4} `believe' as stative verbs.
+For these two verbs, examples such as (\ref{ex:xihuan}) and (\ref{ex:xiangxin}) can be found.
+\ea\label{ex:xihuan}%这车好型啊！！！。怎么了，我就喜欢喜欢 不行么~ (BCC)
+\gll \objex{zhe4} \objex{che1} \objex{hao3} \objex{xing2} \objex{a}! \objex{zen3me} \objex{le}, \objex{wo3} \objex{jiu4} \obj{xi3huan1-xi3huan4} \objex{bu4xing2} \objex{me}?\\
+this car so cool \textsc{ptc} what \textsc{ptc} I just like-like cannot \textsc{ptc}\\\jambox{(BCC)}
+\glt `This car is so cool! What? I can't just like it for a little bit?'
+
+\ex\label{ex:xiangxin}%谁让我来相信相信 (CCL)
+\gll \objex{shei2} \objex{rang4} \objex{wo3} \objex{lai2} \objex{xiang1xin4-xiang1xin4}\\
+who let I come believe-believe\\\jambox{(CCL)}
+\glt `Who lets me believe him/her?'
+\z
 However, as the reviewer %\citealt[283]{Ding2010}, \citealt[fn. 3]{BascianoMelloni2017}
 and indeed \citet[669--670]{Tham2013} herself noted,
-verbs expressing psychological states such as these can have a COS interpretation (but not necessarily),
+verbs expressing psychological states such as these can have a change of state (COS) interpretation (but not necessarily),
 let us look at other examples of stative verbs listed by \citet[680]{PeckEtAl2013} which do not express psychological states,
-and examples in  \citet[Sec. 3.3.3]{XiaoMcEnery} of individual-level states (ILSs) which only have stative interpretation,
+and examples in  \citet[Sec. 3.3.3]{XiaoMcEnery2004} of individual-level states (ILSs) which only have stative interpretation,
 as opposed to stage-level states (SLSs) which can have both stative and dynamic interpretations.\footnote{
-Note that most examples of ILSs in \citet[Sec. 3.3.3]{XiaoMcEnery} are adjectives.
+Note that most examples of ILSs in \citet[Sec. 3.3.3]{XiaoMcEnery2004} are adjectives.
 Since in Mandarin Chinese, adjectives have a different reduplication pattern (see e.g. \citealt[Sec. 2.2]{Tsao2001}, \citealt[Sec. 4.1]{FanSongBond2015}, \citealt[Sec. 3]{Sui2018}),
 and further, COS verbs can be systematically derived from adjectives \citep[Sec. 3]{Tham2013}, 
 these predicates are not included in our examples.}
-The following examples contain the reduplication of xiang4 `look like' and zai4-chang3 `be present on the scene'.
-范丞丞雪中撑伞这是蒋丞吧王圣迪也拿着滑板！太像顾淼了王安宇你快点也像一像吧！(https://www.163.com/dy/article/FS1FKUC30534DZO1.html (2020/11/22, accessed 2024/03/26))
-她此刻正沉浸在一个前所未有的悲剧中，很需要母亲在一在场便能给予她的那点安慰 (CCL)
+The following examples contain the reduplication of \obj{xiang4} `look like' and \obj{zai4-chang3} `be present on the scene'.
+\ea\label{ex:xiang}%范丞丞雪中撑伞这是蒋丞吧王圣迪也拿着滑板！太像顾淼了王安宇你快点也像一像吧！(https://www.163.com/dy/article/FS1FKUC30534DZO1.html (2020/11/22, accessed 2024/03/26))
+Context: \objex{Wang2} \objex{Sheng4di2} is the actor of the character \objex{Gu4} \objex{Miao3} in a TV series. 
+\objex{Wang2} \objex{An1yu3} is another actor in the series.\\
+\\
+\gll \objex{Wang2} \objex{Sheng4di2} \ldots\, \objex{tai4} \objex{xiang4} \objex{Gu4} \objex{Miao3} \objex{le}. \objex{Wang2} \objex{An1yu3} \objex{ni3} \objex{kuai4dian} \objex{ye3} \obj{xiang4-yi-xiang4} \objex{ba}!\footnotemark\\
+Wang Shengdi {} very look.like Gu Miao \textsc{ptc} Wang Anyu you fast also look.like-one-look.like \textsc{ptc}\\
+\glt `Wang Shengdi \ldots\,  really looks like Gu Miao. Wang Anyu, you too should just look like (your character) already!'
+
+\ex\label{ex:zaichang}%她此刻正沉浸在一个前所未有的悲剧中，很需要母亲在一在场便能给予她的那点安慰 (CCL)
+\objex{ta1} \ldots\, \objex{hen4} \objex{xu1yao4} \objex{mu3qin1} \obj{zai4-yi-zai4-chang3} \ldots\\
+she {} very need mother be.present-one-be.present-scene\\\jambox{(CCL)}
+\glt `She \ldots\, really needs her mother to be present on scene for a little while \ldots'
+\z
+\footnotetext{\url{https://www.163.com/dy/article/FS1FKUC30534DZO1.html} (Accessed 26th  March 2024).}
 
 With regard to achievements, the reduplication does not seem to cancel the telos.
-Applying the classic ``for/in X-time'' test, reduplication is compatible with ``in X-time'' (b) but not with ``for X-time'' (c).
-()a 一块... 到附近市场买买东西 (CCL)
-b 两天后到附近市场买买东西
-c *到附近市场买买东西两天
-The following continuation that cancels the telo is also infelicitous ().
-() 到附近市场买买东西 # 但什么也没买到
+Applying the classic ``for/in X-time'' test, reduplication is compatible with ``in X-time'' (\ref{ex:telob}) but not with ``for X-time'' (\ref{ex:teloc}).
+\ea
+\ea[]{\label{ex:teloa}% 一块... 到附近市场买买东西 (CCL)
+\gll \objex{yi2kuai4} \ldots\, \objex{dao4} \objex{fu4jin4} \objex{shi4chang3} \obj{mai3-mai3} \objex{dong1xi}\\
+together {} arrive nearby market buy-buy thing\\\jambox{(CCL)}
+\glt `(We) together \ldots\, went to the market nearby to buy some things.'}
+
+\ex[]{\label{ex:telob}% 两天后到附近市场买买东西
+\gll \objex{liang3} \objex{tian1} \objex{hou4} \objex{dao4} \objex{fu4jin4} \objex{shi4chang3} \obj{mai3-mai3} \objex{dong1xi}\\
+two day later arrive nearby market buy-buy thing\\
+\glt `Two days later, (we) went to the market nearby to buy some things.}
+
+\ex[*]{\label{ex:teloc}%到附近市场买买东西两天
+    \gll \objex{dao4} \objex{fu4jin4} \objex{shi4chang3} \obj{mai3-mai3} \objex{dong1xi} \objex{liang3} \objex{tian1}\\
+    arrive nearby market buy-buy thing two day\\
+    \glt Intended: `(We) went to the market nearby to buy some things for two days.'}
+\z\z
+The following continuation that cancels the telo is also infelicitous (\ref{ex:telod}).
+\ea\label{ex:telod} 到附近市场买买东西 \# 但什么也没买到
+\z
 
 All the examples above show that reduplication is applicable to all verb classes, contrary to common beliefs in the literature,
 and thus, a theoretical account of reduplication should not restrict its use to only a subset of verbs.
@@ -115,7 +171,7 @@ With our account, we aim to explain as much language data as possible, regardles
 
 Finally, as we discussed in Sec. 2.3.1 in the previous version of the paper, the semantics of the reduplication has the properties of tansitoriness, holisticity and dynamicity.
 This means that the use of reduplication affects the situation aspect at the sentential level.
-One might argue that examples such as () and () above convey dynamic meaning, even though stative verbs are used.
+One might argue that examples such as (\ref{ex:xiang}) and (\ref{ex:zaichang}) above convey dynamic meaning, even though stative verbs are used.
 %i.e. they may be interpreted as `become similar to' and `become present' respectively.
 However, we argue that the dynamic interpretation does not come from the verb but from reduplication.
 These verbs are stative in a neutral context and thus, we consider the intrinsic feature of these verbs to be stative.
@@ -130,10 +186,10 @@ the reduplication is incompatible with an expression that quantifies the duratio
  %() *我看看三本书。
  This results from the properties of reduplication and does not change the verb class of the predicate.
  
-Due to its unique features compared to the perfective aspect marker \textit{le} and the experiential aspect marker \textit{guo},
-the reduplication is the only perfective viewpoint aspect that can freely occur in future situations \citep[156--157]{XiaoMcEnery}.
+Due to its unique features compared to the perfective aspect marker \textit{le} and the experiential aspect marker \textit{guo4},
+the reduplication is the only perfective viewpoint aspect that can freely occur in future situations \citep[156--157]{XiaoMcEnery2004}.
 \textit{Le} expresses a situation being realized, 
-while \textit{guo} conveys a situation already experienced,
+while \textit{guo4} conveys a situation already experienced,
 and thus, both rarely occur in future situations.
 The use of reduplication does not have these constraints.
 This explains the general tendency for the reduplication to appear in conditional clauses and imperative or causative contexts,
@@ -172,6 +228,7 @@ It is worth noticing that, different from diminishing verb reduplication, in AAB
 
 In summary, the tests used to support the morphological status of reduplication appear
 unconvincing. 
+
 %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%
 Answer:
@@ -210,7 +267,8 @@ and the patterns discussed here constitute a different process than the AABB pat
 it is not surprising that \textit{le} occurs at a different position.
 
 The comparison with Parallel Verb Compounds and Serial Verb Constructions only serves to facilitate understanding
-but does not contribute to the arguments in any substantial way.
+by contrasting the behaviors of different multi-verb constructions in Mandarin Chinese,
+but this does not contribute to the arguments in any substantial way.
 Due to the critics from the reviewers, this comparison is removed.
 
 Cross-linguistically, verbal reduplication in Mandarin Chinese patterns more with morphological reduplication (below as reduplication) in other languages 
@@ -234,28 +292,110 @@ examination is entirely different from Mandarin verbal reduplication. Ghomeshi e
 a phenomenon which is well attested in world languages, even in those without productive
 reduplication, i.e. contrastive focus reduplication/repetition, which involves the repetitions of
 words and sometimes phrases (Oh, we re not LIVING-TOGETHER-living-together, Gomeshi et al. 2004: 308). Their function is “to focus the denotation of the reduplicated element on a more sharply delimited, more specialized, range” (Gomeshi etal. 2004: 308); for example, in ex. (47) cited by the author(s) SALAD-salad means green salad vs. salads in general. This has nothing to do with diminishing verbal reduplication in Mandarin. The authors’ endeavor to apply the analysis proposed for contrastive focus reduplication to Mandarin verbal reduplication raises questions about its rationale (why? These two phenomena are fundamentally distinct and serve different linguistic functions). Consequently, attempting to employ the same analytical framework for both is problematic, and, indeed, the author(s) conclude(s) that: “this approach fails to account for the similarities of the reduplication and other aspect markers in Mandarin Chinese”. This is precisely because contrastive focus repetition/reduplication is a different phenomenon with a different function, and Mandarin verbal reduplication cannot be analyzed in the same way. Furthermore, the author(s) suggest(s) that this approach “[...] also provides a formal account for the phonology of the reduplication”. However, contrastive focus reduplication/repetition generally does not involve morpho-phonological readjustment phenomena, which are typically found in reduplication. As a result, it cannot adequately account for phenomena such as the neutral tone of the reduplicant in the case of reduplication of monosyllabic verbs (kan > kan kan).
+
 %%%%%%%%%%%%%%%%%%
 Answer:
-Since the reviewer deemed it irrelevant, the section concerning \citet{GomeshiEtAl2004} is removed.
+Since the reviewer deemed it irrelevant, the section concerning \citet{Ghomeshietal2004} is removed.
 
 %%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%
+%% YL
 Pp. 26, lines 24-25: “The output reduplicates the phonology (phon) of the input verb with the possibility to have further phonological material in between. [] indicates an underspecified list which could be empty or not”. However, it is not entirely clear what prevents phonological material other than yi and le to appear in between the reduplicated elements. This aspect seems to be somewhat arbitrary, and it is not evident why certain elements are permissible while others are not.
 
+%%%%%%%%%%%%%%%%%%%%
+Answer:
+\obj{le} `\textsc{pfv}' marks the perfective aspect.
+The reason for \obj{le} `\textsc{pfv} being the only aspect marker compatible with reduplication is explained in the Semantics Section.
+
+As for \obj{yi} `one', its use stems from the historical development of delimitative verbal reduplication but is synchronically opac.
+\citet[13--15]{Zhang2000} shows that delimitative verbal reduplication originates from the ``V + numeral + verbal classifier'' phrase,
+where the verbal classifier is borrowed from a verb of the same form, as shown in (\ref{ex:hist1}).
+\ea\label{ex:hist1} 
+明又喝,岐亦喝,明连喝两喝,岐便礼拜。(《宋代卷·虚堂和尚语录》3 87 页) as cited in \citet[12]{Zhang2000}
+%\gll \obj{ming2} \obj{}
+\z
+Here the numeral refers to the actual number of the action taking place 
+and can be any number.
+This evolves into the structure of V-\obj{yi}-V (or A-\obj{yi}-A), which does not express the actual number of the action anymore,
+but simply conveys that the action happens in a short period of time or for only few times (\ref{ex:hist2}).
+\ea\label{ex:hist2}
+且歇一歇了,去坐地。(《宋代卷·张协状元》5 19 页) as cited in \citet[13]{Zhang2000}
+\z
+In this case, \obj{yi1} `one' cannot be replaced by other numerals.
+Since V-\obj{yi}-V does not express the actual number of the action anymore, 
+it became possible to delete the \obj{yi1} `one',
+hence the use of the VV (or AA) form, too.
+
+Synchronically, A-\obj{yi}-A has the same meaning as AA and both do not refer to the actual number of the event denoted by the verb.
+This means that \obj{yi1} `one' in A-\obj{yi}-A does not contribute any specific meaning to the structure 
+and is only there as a historical remnant.
+In this sense,  \obj{yi1} `one' appearing in between the reduplication is synchronically arbitrary. %similar to linking elements in compounds
+
+Besides the obvious conceptual reason that  \obj{yi1} `one' means `little, few', 
+there might be a phonological explanation for  \obj{yi1} `one' rather than other numerals is used in the A-\obj{yi}-A structure.
+In Chinese, one form of intensifying reduplication is A-\obj{li}-AB e.g. \obj{hu2-li-hu2tu2} `confused-li-confused', 
+where the \obj{li} is fixed and also does not bear any meaning. 
+\citet[137]{Sui2018} assumes that this syllable is filled with \obj{li} because the open syllable \obj{li} is a relatively unmarked phonological constituent \citep{Yip1992}
+and the second syllable in A-\obj{li}-AB occupies an unstressed position. 
+We can see the similarities between \obj{li} in A-\obj{li}-AB and \obj{yi} in A-\obj{yi}-A: they are both relatively unmarked and occupies an unstressed position.
+This can also make it easier for  \obj{yi1} `one' rather than other numerals to become part of a fixed structure.
+But a phonological account is out of the scope of this paper and has to be left for further research.
+
+The subtypes of \type{verbal-reduplication-lr} prevent phonological materials other than \phonliste{le} and \phonliste{yi} from appearing in between the reduplication by specifying what can appear in the list and what not.
+
+%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%
+%% YL
 The proposed analysis appears to have limitations in explaining the constraints on verbs and the observed modifications at the Aktionsart level. How can one determine which verbs are exempt from the proposed lexical rule? The proposed rule does not seem to provide a clear prediction of which verbs are allowed and which are excluded from reduplication. Why only some states and achievements are allowed? The restrictions on the usage of the progressive with reduplicated verbs also remain unexplained.
 
+%%%%%%%%%%%%%%%%%%%%%
+Answer:
+As explained above, we propose that all verbs regardless of their basic Aktionsart can be reduplicated given suitable context.
+The incompatibility with the progressive aspect marker is explained in the Semantics section.
+%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%
+%% Stefan
 The proposed analysis appears to have a descriptive rather than an explanatory power.
+%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%
+%% YL
 I would add tones to the pinyin transcription.
+%%%%
+Answer: will add
 
+%%%%%
 Other comments:
 
 p. 4: ex. (8b) is interesting, since it appears to involve the reduplication of V1 of a resultative compound. To the best of my knowledge, exiting literature on the subject consistently maintains that resultative compounds are not amenable to reduplication.
+%%%%%%%%
+Answer: add footnote
 
+%%%%%%%%
 p. 5, exx. (11): I believe it would be useful to provide also an example illustrating that reduplicated verbs are incompatible with (post-verbal) for X-time adverbials.
+%%%%
+Answer: See above.
 
+%%%%
 p. 18, exx. (39b): to the best of my knowledge, the object can be placed before —F yixia only in limited cases (pronouns and proper nouns).
 
+%%%%%%%%%%%%%
+Answer: 
+There are some examples from the corpus showing that not only pronouns and proper nouns can be placed before \textit{yixia}:
+她看了他的脸一下。(CCL)
+他没碰窗户，就看了玻璃一下，玻璃就烂了。(CCL)
+We think it has to do with the weight/length of the object, i.e. shorter objects can be placed before \textit{yixia} while longer ones cannot.
+%This is not necessarily a syntactic constraint.
+
+Even if we accept that the object can be only be placed before \textit{yixia} in limited cases, 
+the fact that the object can be placed before \textit{yixia} in some cases but in no cases in between reduplication suggests there is a fundamental difference between the structure of the two phenomena.
+
+%%%%%%%%%%%%%%
 p. 20, lines 28-31: “Arcodia et al. (2014) and Basciano \& Melloni (2017) assumed that the first
 element in the reduplication is the actual verb, which resides under init and proc, and that the
 second element is an aspect marker, which resides in the complement position of proc, as it delimits
@@ -264,8 +404,15 @@ element serves as an aspect marker. They propose that the verb and the reduplica
 of two copies of the same lexical item within the vP domain: the reduplicant is the lower copy, in
 complement position, and serves as an event delimiter. In this analysis, reduplication affects the Aktionsart of the verb.
 
+%%%%%%%%%%%%%
+Answer: We reformulated as ``The second element is the copy of the verb, which resides in the complement position of proc and serves as an event delimiter.''
+
+%%%%%%%%%%%%%
 p. 32, lines 28-34: “Although these forms are generally considered unacceptable (Li \& Thompson 1981: 30; Hong 1999: 275-276; Basciano \& Melloni 2017: 160; Yang \& Wei 2017: 239), Fan (1964: 269) and Sui (2018: 143) considered AB-yi-AB and AB-le -yi-AB to be possible, even though they both recognized that these two forms are rare.” Given that these patterns were possible in previous stages of the language (see a.0. Basciano \& Melloni 2017), these rare occurrences can be seen as relics of this usage. 
 
+%%%%%%%%%%%%%%%%%%%%%%
+Answer: add a footnote
+%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Reviewer 2}
 
@@ -291,7 +438,9 @@ that verb reduplication should be morphological more convincing.
 For additional comments, please refer to the attached PDF file.
 
 
-
+%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%
+%% YL
 R2 comments on the following passage: The current study will only focus on the AA, A-yi-A, A-le-A, A-le-yi-A, ABAB and
 AB-le-AB forms of verbal reduplication in Mandarin Chinese. AA-kan, A-kan-kan,
 AAB, A-yi-AB, A-le-AB will also be mentioned.
@@ -300,6 +449,27 @@ One of the key questions addressed in this paper pertains to whether verb redupl
 
 To further enrich the ongoing debate, I wonder whether the authors will consider the inclusion of examples that previous studies have identified as morphological verb reduplications. This addition would help demonstrate the broader scope and applicability of your analysis. Alternatively, it would be beneficial to clarify the reasons for selecting these specific forms in this article.  
 
+%%%%%%%%%%%%%%%%
+Answer: 
+\citet{Xie2020} identifies the AABB form as morphological verb reduplication.
+Even though we do not agree with \citegen{Xie2020} claim that the distinction between ABAB and AABB lies in the distinction between morphology and syntax,
+we do agree that they are different grammatical processes and thus requires separate analyses (See also \citealt[Sec. 4.3]{Deng2013}, \citealt{Wang2023}).
+Also note that there are numerous scholars that do consider the forms analyzed here as morphological processes (\citealt[Ch. 4]{Chao1968}, \citealt[Ch. 3]{LiThompson1981}, \citealt[4--5]{Liao2014} and \citealt[Sec. 4]{Sui2018}).
+\citet[14--15]{Zhang2000} argues that the AABB form of reduplication develops from a completely separate historical origin from the AA and ABAB forms, 
+as the former has a intensifying rather than delimitative meaning.
+\citet[83--84]{Xie2020} further points out that AABB is much less productive than ABAB.
+This suggests that at least some AABB might not be formulated by rules but is stored in the lexicon as a whole.
+This is probably the case for those AABBs that have an idiomatic meaning, such as \textit{zhi-zhi-dian-dian} `point-point-gesture-gesture, gossip'.
+%Productively formed AABBs can be accounted for by the current analysis as the reduplication happens before the compounding process,
+%i.e. monosyllabic verbs are reduplicated separately (as AA and BB respectively) and then compounded together to form AABB.
+%This is in line with the proposal in \citet[Sec. 4.2]{Wang2023},
+%and also explains why some AABBs do not have a base AB form, such as \textit{zou-zou-ting-ting} `walk-walk-stop-stop, walk for a while and rest for a while', *\textit{zou-ting} `walk-stop'
+The current analysis has a broad scope in that it explains all forms of delimitative verbal reduplication, which previous analyses were not able to do.
+An analysis for the AABB form of reduplication has to be left for further research.
+
+%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%
+%% YL
 R2 comments on the following passage: The meaning of the reduplication is not compositional, as it does
 not mean that the event denoted by the verb happens twice or multiple times, but
 rather that the event happens for a short duration and/or for low frequency. This
@@ -323,8 +493,7 @@ The key consideration here is that the unacceptability of (26b) and examples suc
 
 Consequently, it becomes challenging to use these examples as support for the argument that verb reduplication should be classified as a morphological rather than a syntactic phenomenon. This is because even regular verb phrases cannot be partially modified in the same manner. 
 
-Answer: Yes, this is true.
-
+%Answer: Yes, this is true.
 
 Examples (27) and (28) serve as illustrations to demonstrate the application of the 'Lexical Integrity Hypothesis' in distinguishing PVC from SVC.
 
@@ -354,15 +523,36 @@ In light of this, it becomes essential to clarify why SVC, rather than regular v
 chosen as a comparison to Parallel Verb Compounds. Such clarification would enhance the
 persuasiveness of the tests presented in this section. 
 
+%%%%%%%%%%%%%%%%%%%
+Answer: See above.
+%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%
 
 
-
+%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%
+%% YL
 The reason for the loss of idiomatic meaning in (43b) but not in (43c) could be attributed to the
 presence of the number 'san' in (43b). If 'san xia' is replaced with 'yi xia,' which remains a
 verbal classifier, the idiomatic meaning is perserved. In this case, there appears to be no
 distinction between verbal classifier and reduplication. 
 
+%%%%%%%%%%%%%%%%%%%%
+Answer:
+It is not \textit{san xia} `three times' that is special, but it is \textit{yi xia} `once' that is special.
+We can replace \textit{san} `three' with any number above two,
+and the distinction still exist.
+But \textit{yi xia} `once' has acquired a duration reading `for a little while' that is not available to the other event quantifiers formed by \textit{xia}, which only have the `for X times' interpretation (\citealt[77]{Deng2013}, \citealt[16]{Zhang2000}).
+We think \textit{liang xia} `twice' is following this tendency, too.
+In this case, it is easy to interpret \textit{yi xia} and \textit{liang xia} not as referring to the actual number of action taking place, 
+but as duration adverbials as a whole,
+thus differing them from ``actual'' verbal classifier phrases with other numerals.
+%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%
+%% Stefan
 It would enhance reader comprehension if the authors could provide a brief illustration of symbols
 like HOOK, LTOP, IND, ARG, etc. This will aid readers in better grasping the authors' subsequent
 proposals in Section 4. 
@@ -370,15 +560,18 @@ proposals in Section 4.
 
 Perhaps PHON is missed in LEX-DTR of (57), even though PHON is empty in (57). 
 
-PHON is not missing. The constraints regarding PHON on the mother and the daughter are coming from
+Answer: PHON is not missing. The constraints regarding PHON on the mother and the daughter are coming from
 another constraint. A constraint that is a subtype in the hierarchy. The type
 perfective-reduplication-lr in (51), which says that the PHON value of the daughter \ibox{1} appears
 twice in the PHON value of the mother with some other material (\etag) between the two occurrences of \ibox{1}. 
-
-
+%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%
 
 \section{Reviewer 3}
 
+%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%
+%% YL
 The following paragraph looks terse to me. The author(s) want to provide more explanation about the four tests. In addition, the footnote 6 might be better to move into the body.
 Duanmu (1998) and Schäfer (2009) proposed the following four tests to distinguish words from phrases
 in Mandarin Chinese: semantic compositionality, phrasal extension, phrasal substitution and
@@ -386,11 +579,25 @@ conjunction reduction.
 
 In Page 14, the draft makes use of a new terminology such as “word-like”. Of course, I can understand the meaning within the context. However, I think the author(s) might be better to use a more academic and formal terminology.
 
+%%%%%%%%%%%%%%%%%%%%%%
+Answer: reformulate as ``behaves more similar to a word''.
+
+%%%%%%%%%%%%%%%%%%%%%%
 Section 3 (Previous Analysis) appears in Page 17. I think it would be a little bit late. The author(s) may have a plan to restructure Sections 2 and 3 again.
+
+%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%
+%% YL
+Answer: Since the discussion on the pros and cons of previous analyses relies heavily on understanding the syntactic and semantic constraints of reduplication, we believe that it is necessary to discuss the phenomenon thoroughly before discussing previous analyses.
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Stefan
 In Page 26, the draft introduces a new notion (i.e., an empty rectangle) into the AVMs. Is it what the author(s) invent only for modeling the verbal reduplication in this drat? If so, the author(s) want to account more for how it works in AVMs. Otherwise, the author(s) might be better to refer to the previous analysis about the notion.
 
 In Section 4, I am expecting the author(s) provide a sample derivation (maybe a tree diagram). The draft provides the subsets about how verbal reduplication can be constrained within the AVMs. On top of them, a full derivation can be made for better understanding.
-
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
 
 
 {\sloppy
