@@ -64,3 +64,27 @@
 % pinyin
 \newcommand{\obj}[1]{\pinyin[format = \itshape]{#1}}
 \newcommand{\objex}[1]{\pinyin{#1}}
+
+
+
+\usepackage{todonotes}
+
+\newcommand{\todostefan}[1]{\todo[color=orange!80]{\footnotesize #1}\xspace}
+\newcommand{\todosatz}[1]{\todo[color=red!40]{\footnotesize #1}\xspace}
+
+\newcommand{\inlinetodostefan}[1]{\todo[color=green!40,inline]{\footnotesize #1}\xspace}
+
+\newcommand{\inlinetodoopt}[1]{\todo[color=green!40,inline]{\footnotesize #1}\xspace}
+\newcommand{\inlinetodoobl}[1]{\todo[color=red!40,inline]{\footnotesize #1}\xspace}
+
+\newcommand{\itd}[1]{\iftoggle{draft}{\inlinetodoobl{#1}}{}}
+\newcommand{\itdobl}[1]{\iftoggle{draft}{\inlinetodoobl{#1}}{}}
+\newcommand{\itdopt}[1]{\iftoggle{draft}{\inlinetodoopt{#1}}{}}
+
+% for editing, remove later
+%\usepackage{xcolor}
+\newcommand{\iaddpages}{\iftoggle{draft}{\yel[add pages]{pages}\xspace}}
+
+\newcommand{\addpages}{\iftoggle{draft}{\todostefan{add pages}}\xspace}
+\newcommand{\addsource}{\iftoggle{draft}{\todostefan{add source}}\xspace}
+\newcommand{\addglosses}{\iftoggle{draft}{\todostefan{add glosses}}\xspace}
