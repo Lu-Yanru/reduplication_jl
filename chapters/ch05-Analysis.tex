@@ -14,9 +14,21 @@ reduplication lexical rules in this network and the implicational constraint in 
 structures of type \textit{verbal-reduplication-lr}. Such structures take a verb as
 \textsc{lexical-daughter (lex-dtr)}.  The output reduplicates the \textsc{phonology (phon)} of the
 input verb with the possibility to have further phonological material in between.  \etag{} indicates
-an underspecified list which could be empty or not.  A delimitative relation is appended to the
-\textsc{relations (rels)} value of the input verb, and it takes the event index of the input verb as
-argument.  The label of the output \iboxb{2} is identified with the label of the input and with the
+an underspecified list which could be empty or not.\footnote{%
+The \etag is equivalent to a tag with a number with the difference that \etag is never shared. We
+follow Müller (\citeyear[161]{Mueller2002b}, \citeyear[294]{Mueller2003e}) and elsewhere in using this
+notation, since we think this is more
+precise than simply using three dots.}
+A delimitative relation is appended to the
+\textsc{relations (rels)} value of the input verb, and it takes the event index of the input verb \iboxb{3} as
+argument. The list of relations contains so-called elementary predications. There is no complicated
+embedding of relations. Instead each elementary predication comes with a label (\textsc{lbl}). The
+label can be used as an argument of another relation or in scope constraints, which are not provided
+here to keep things simple. The feature \textsc{ltop} points to the local top. This is the
+elementary predication that is considered the top-most one in the \relsl. Other elementary
+predications may share the label or have arguments with labels of other elementary predications. We
+will discuss an example below when we discuss the perfective lexical rule.
+The label of the output \iboxb{2} is identified with the label of the input and with the
 label of the delimitative relation, hence \type{delimitative-rel} is treated as a modifier.  Further
 relations can be added at the beginning of the \textsc{rels} list to allow for the additional
 perfective meaning in A-\textit{le}-A and A-\textit{le}-\textit{yi}-A.  The combination with the
@@ -280,13 +292,13 @@ and this shared label is embedded under the \type{perfective-rel}.
 
 \ea\label{avm:pfv-redup}
 Perfective and reduplication combined: type \type{perfective-reduplication-lr} with
-constraints inherited from \type{perfective-lr} and \type{verbal-reduplication-lr}:
+constraints inherited from \type{perfective-lr} and \type{verbal-redu\-pli\-ca\-tion-lr}:\\
 %\resizebox{\linewidth}{!}{
  %   \scalebox{.9}{%
         \avm{
             [\type*{perfective-reduplication-lr}\\
             phon & \1 $\oplus$ \phonliste{ le } $\oplus$ \etag $\oplus$ \1\\
-            \punk{synsem\textbar loc \textbar cont\textbar ltop}{ \2}\\ 
+            \punk{synsem\textbar loc\textbar cont\textbar ltop}{ \2}\\ 
             rels & <[\type*{perfective-rel}\\
             lbl & \2\\
             arg0 & \3\\
@@ -340,6 +352,7 @@ Specifically, \type{a\hyp{}le\hyp{}yi\hyp{}a\hyp{}lr} specifies the middle phono
     }
 %}%&
 \ex   % \scalebox{.9}{%
+\label{avm:a-le-a-lr}
     \type{a-le-a-lr} \impl\\
         \avm{
             [%\type*{a-le-a-lr}\\
@@ -353,7 +366,57 @@ Specifically, \type{a\hyp{}le\hyp{}yi\hyp{}a\hyp{}lr} specifies the middle phono
 \z
 \z
 
+The analysis of (\ref{ex-he-tasted-the-soup-a-little-bit2}) is shown in tree format in
+Figure~\ref{fig-he-tasted-the-soup-a-little-bit}. The \textsc{lex-dtr} is the daughter in the tree.
+\begin{figure}[htbp]
+\centering
+\begin{forest}
+[        \avm{
+            [\type*{a-le-a-lr}\\
+            phon & \1 $\oplus$ \phonliste{ le } $\oplus$ \1\\
+            synsem\textbar loc & [ cat  & [ head  & verb\\
+                                            spr   & < NP$_{\6}$ >\\
+                                            comps & < NP$_{\7}$ > ]\\
+                                   cont & [ ltop & \2\\
+                                            ind  & \ibox{3} ]] \\
+            rels & <[\type*{perfective-rel}\\
+            lbl & \2\\
+            arg0 & \3\\
+            arg1 & \4]> $\oplus$ \5 $\oplus$
+            <[\type*{delimitative-rel}\\
+            lbl  & \4\\
+            arg0 & \3]> ]
+    }
+[\avm{ [phon & \1 \phonliste{ chang2 }\\
+       synsem\textbar loc & [cat  & [ head  & verb\\
+                                      spr   & < NP$_{\6}$ >\\
+                                      comps & < NP$_{\7}$ > ]\\
+                             cont & [ ltop & \4\\
+                                      ind  & \3]]\\
+        rels & \5 < [\type{taste}\\
+                     lbl  & \4\\
+                     arg0 & \3\\
+                     arg1 & \6\\
+                     arg2 & \7 ] > ]
+}]]
+\end{forest}
 
+\caption{Analysis of \emph{chang2-le-chang2} taste-\textsc{pfv}-taste `taste the soup a little bit'}\label{fig-he-tasted-the-soup-a-little-bit}
+\end{figure}
+
+The figure shows how the lexical item for \emph{chang2} `to taste' is inserted as a daughter into
+the \type{a-le-a-lr} lexical rule. The arguments of \emph{chang2} `to taste' are represented within the \spr and
+the \compsl (see \citet{GSag2000a-u} for English) and the respective argument NPs are linked to the
+arguments of \type{taste}: the subject is \textsc{arg1}, the agent, and the object is \textsc{arg2},
+the stimulus. See \citet{DKW2021a} for more on linking. The part of speech of the lexical item
+(\type{verb}) and the valence information is carried over from the daughter to the mother
+unchanged. The semantic contribution of the daughter verb, the value of \ibox{5}, is inserted into
+the \relsl of the mother as it was specified in the constraints on the type
+\type{perfective-reduplication-lr} in (\ref{avm:pfv-redup}). The \textsc{phon} value of the mother
+is the concatentation of \emph{chang2}, \emph{le} and \emph{chang2}, as specified in the constraint
+on \type{a-le-a-lr} in (\ref{avm:a-le-a-lr}). The resulting unit \emph{chang2-le-chang2} then
+combines with its object forming a VP. This VP is combined with the subject resulting in a complete
+verbal projection, a sentence. \emph{chang-le-chang} behaves in the same way as the simple \emph{chang2}.
 
 Since the above-described lexical rules do not constrain the number of syllables of the input verb, but simply reduplicate its phonology  as a whole,
 they can also account for the ABAB and the AB-\textit{le}-AB forms of reduplication,
