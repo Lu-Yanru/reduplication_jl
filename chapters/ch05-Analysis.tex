@@ -187,7 +187,7 @@ and has two subtypes, \type{a-le-yi-a-lr} and \type{a-le-a-lr} itself.
 We now turn to the constraints on \type{perfective-lr} and its subtypes.
 
 
-\citet[246]{MuellerLipenkova2013} proposed the perfective lexical rule given in (\ref{avm:pfv-old}), 
+\citet[246]{MuellerLipenkova2013} propose the perfective lexical rule given in (\ref{avm:pfv-old}), 
 adapted to the formalization adopted in the current paper.
 It takes a verb as \textsc{lex-dtr}
 and appends \phonliste{ le } to its phonology.
@@ -336,7 +336,55 @@ Two subtypes of \type{perfective-reduplication-lr} are posited:
 and \type{a-le-a-lr}, as shown in (\ref{avm:AleA}). %(\ref{avm:AleA}).
 They take over the semantic change to the input from \type{perfective\hyp{}reduplication\hyp{}lr}, but specify the \textsc{phon} value differently.
 Specifically, \type{a\hyp{}le\hyp{}yi\hyp{}a\hyp{}lr} specifies the middle phonological material as
-\phonliste{ le, yi }, while \type{a-le-a} specifies it as \phonliste{ le } only.
+\phonliste{ le, yi }, while \type{a-le-a} specifies it as \phonliste{ le } only.\footnote{
+A reviewer wants to know what prevents phonological material other than \obj{yi} and \obj{le} to appear in between the reduplicated elements.
+He/she states that this aspect seems to be somewhat arbitrary, and it is not evident why certain elements are permissible while others are not.
+
+\obj{le} `\textsc{pfv}' marks the perfective aspect.
+The reason for \obj{le} `\textsc{pfv}' being the only aspect marker compatible with reduplication is explained in Section~\ref{sec:aspM}.
+
+As for \obj{yi} `one', its use stems from the historical development of delimitative verbal reduplication but is synchronically opac.
+\citet[13--15]{Zhang2000} shows that delimitative verbal reduplication originates from the ``V + numeral + verbal classifier'' phrase,
+where the verbal classifier is borrowed from a verb of the same form, as shown in (\ref{ex:hist1}) from \obj{Song4dai4} \obj{juan4}: \obj{Xu1tang2} \obj{He2shang} \obj{yu3lu4} \textit{[The Song dynasty volume: Quotations from Abbot Xutang]} p. 387 as cited in \citet[12]{Zhang2000}.
+\ea\label{ex:hist1}
+%明又喝,岐亦喝,明连喝两喝,岐便礼拜。(《宋代卷·虚堂和尚语录》3 87 页) as cited in \citet[12]{Zhang2000}
+\gll \objex{ming2} \objex{you4} \objex{he4}, \objex{qi2} \objex{yi4} \objex{he4}, \objex{ming2} \objex{lian2} \objex{he4} \objex{liang3} \objex{he4}, \objex{qi2} \objex{bian4} \objex{li3bai4}\\
+Ming agian call Qi also call Ming in.succession call two call Qi thus bow\\
+\glt `Ming called again. Qi called too. Ming called twice. Qi thus bowed.'
+\z
+Here the numeral refers to the actual number of the action taking place
+and can be any number.
+This evolves into the structure of V-\obj{yi}-V (or A-\obj{yi}-A), which does not express the actual number of the action anymore,
+but simply conveys that the action happens in a short period of time or for only few times. 
+Consider (\ref{ex:hist2}) from \obj{Song4dai4} \obj{juan4}: \obj{Zhang1} \obj{Xie2} \obj{zhuang4yuan2} \textit{[The Song dynasty volume: Top graduate Zhang Xie]} p. 519 as cited in \citet[13]{Zhang2000}.
+\ea\label{ex:hist2}
+%且歇一歇了,去坐地。(《宋代卷·张协状元》5 19 页) as cited in \citet[13]{Zhang2000}
+\gll \objex{qie3} \obj{xie1-yi-xie1} \objex{le}, \objex{qu4} \objex{zuo4} \objex{di4}.\\
+just rest-one-rest \textsc{ptc} go sit ground\\
+\glt `(Let me) just take a rest and go sit on the ground.'
+\z
+In this case, \obj{yi1} `one' cannot be replaced by other numerals.
+Since V-\obj{yi}-V does not express the actual number of the action anymore,
+it became possible to delete the \obj{yi1} `one',
+hence the use of the VV (or AA) form, too.
+
+Synchronically, A-\obj{yi}-A has the same meaning as AA and both do not refer to the actual number of the event denoted by the verb.
+This means that \obj{yi1} `one' in A-\obj{yi}-A does not contribute any specific meaning to the structure
+and is only there as a historical remnant.
+In this sense,  \obj{yi1} `one' appearing in between the reduplication is synchronically arbitrary. %similar to linking elements in compounds
+
+Besides the obvious conceptual reason that  \obj{yi1} `one' is taken to mean `little/few',
+there might be a phonological explanation for  \obj{yi1} `one' rather than other numerals is used in the A-\obj{yi}-A structure.
+In Chinese, one form of intensifying reduplication is A-\obj{li}-AB e.g. \obj{hu2-li-hu2tu2} `confused-li-confused',
+where the \obj{li} is fixed and also does not bear any meaning.
+\citet[137]{Sui2018} assumes that this syllable is filled with \obj{li} because the open syllable \obj{li} is a relatively unmarked phonological constituent \citep{Yip1992}
+and the second syllable in A-\obj{li}-AB occupies an unstressed position.
+We can see the similarities between \obj{li} in A-\obj{li}-AB and \obj{yi} in A-\obj{yi}-A: they are both relatively unmarked and occupies an unstressed position.
+This can also make it easier for  \obj{yi1} `one' rather than other numerals to become part of a fixed structure.
+But a phonological account is out of the scope of this paper and has to be left for further research.
+
+The subtypes of \type{verbal-reduplication-lr} (\ref{avm:AyiA}, \ref{avm:AleA}) prevent phonological materials other than \phonliste{ le } and \phonliste{ yi } from appearing in between the reduplication by specifying what can appear in the \etag list and what not.
+}
 
 
 \ea\label{avm:AleA}
@@ -401,22 +449,22 @@ Figure~\ref{fig-he-tasted-the-soup-a-little-bit}. The \textsc{lex-dtr} is the da
 }]]
 \end{forest}
 
-\caption{Analysis of \emph{chang2-le-chang2} taste-\textsc{pfv}-taste `taste the soup a little bit'}\label{fig-he-tasted-the-soup-a-little-bit}
+\caption{Analysis of \obj{chang2-le-chang2} taste-\textsc{pfv}-taste `taste the soup a little bit'}\label{fig-he-tasted-the-soup-a-little-bit}
 \end{figure}
 
-The figure shows how the lexical item for \emph{chang2} `to taste' is inserted as a daughter into
+The figure shows how the lexical item for \obj{chang2} `to taste' is inserted as a daughter into
 the \type{a-le-a-lr} lexical rule. The arguments of \emph{chang2} `to taste' are represented within the \spr and
-the \compsl (see \citet{GSag2000a-u} for English) and the respective argument NPs are linked to the
+the \compsl (see \citealt{GSag2000a-u} for English) and the respective argument NPs are linked to the
 arguments of \type{taste}: the subject is \textsc{arg1}, the agent, and the object is \textsc{arg2},
 the stimulus. See \citet{DKW2021a} for more on linking. The part of speech of the lexical item
 (\type{verb}) and the valence information is carried over from the daughter to the mother
 unchanged. The semantic contribution of the daughter verb, the value of \ibox{5}, is inserted into
 the \relsl of the mother as it was specified in the constraints on the type
 \type{perfective-reduplication-lr} in (\ref{avm:pfv-redup}). The \textsc{phon} value of the mother
-is the concatentation of \emph{chang2}, \emph{le} and \emph{chang2}, as specified in the constraint
-on \type{a-le-a-lr} in (\ref{avm:a-le-a-lr}). The resulting unit \emph{chang2-le-chang2} then
+is the concatentation of \obj{chang2}, \obj{le} and \obj{chang2}, as specified in the constraint
+on \type{a-le-a-lr} in (\ref{avm:a-le-a-lr}). The resulting unit \obj{chang2-le-chang2} then
 combines with its object forming a VP. This VP is combined with the subject resulting in a complete
-verbal projection, a sentence. \emph{chang-le-chang} behaves in the same way as the simple \emph{chang2}.
+verbal projection, a sentence. \obj{chang2-le-chang2} behaves in the same way as the simple \obj{chang2}.
 
 Since the above-described lexical rules do not constrain the number of syllables of the input verb, but simply reduplicate its phonology  as a whole,
 they can also account for the ABAB and the AB-\textit{le}-AB forms of reduplication,
@@ -435,31 +483,31 @@ Indeed, a few examples of AB\hyp{}\emph{yi}\hyp{}AB and AB\hyp{}\emph{le}\hyp{}\
 \gll \objex{ni3} \objex{yu3} \objex{wo3} \obj{zheng3li3-yi-zheng3li3}.\footnotemark\\
 you let me arrange-one-arrange\\
 \glt `Let me arrange it a little bit!'
-\footnotetext{\textit{Yuanqu xuan: Luzhailang [Selected Yuanqu: Luzhailang]}, as cited in \citet[15]{Zhang2000}}
+\footnotetext{\obj{Yuan2qu3} \obj{xuan3}: \obj{Lu3zhai1lang2} \textit{[Selected Yuanqu: Luzhailang]}, as cited in \citet[15]{Zhang2000}}
 
 \ex\label{ex:AByiAB-pu}
 \gll \objex{ni3} \obj{da3ting1-yi-da3ting1}.\footnotemark\\
 you inquire-one-inquire\\
 \glt `Inquire about it a little bit!'
-\footnotetext{\textit{Yuan Ming juan: Piaotongshi [Yuan and Ming volume: Piaotongshi]}, 308, as cited in \citet[15]{Zhang2000}}
+\footnotetext{\obj{Yuan2} \obj{Ming2} \obj{juan4}: \obj{Piao2tong1shi4} \textit{[Yuan and Ming volume: Piaotongshi]}, 308, as cited in \citet[15]{Zhang2000}}
 
 \ex\label{ex:AByiAB-rou1}
 \gll \objex{ge4} \objex{ge4} \objex{dian3-tou2} \obj{wei1xiao4-yi-wei1xiao4}.\footnotemark\\
 \textsc{clf} \textsc{clf} nod-head smile-one-smile\\
 \glt `Each one nodded his head and smiled a little bit.'
-\footnotetext{Rou, Shi. 1975. \textit{Roushi xiaoshuo xuanji [Selected novels of Roushi]}, 31. Beijing: People's Literature Publishing House.}
+\footnotetext{\objex{Rou2}, \objex{Shi2}. 1975. \obj{Rou2} \obj{Shi2} \obj{xiao3shuo1} \obj{xuan3ji2} \textit{[Selected novels of Roushi]}, 31. Beijing: People's Literature Publishing House.}
 
 \ex\label{ex:AByiAB-rou2}
 \gll \objex{ta1} \obj{wei1xiao4-le-yi-wei1xiao4}, you \obj{ming2xiang3-le-yi-ming2xiang3}.\footnotemark\\
 he smile-\textsc{pfv}-one-smile and meditate-\textsc{pfv}-one-meditate\\
 \glt `He smiled a little bit and meditated a little bit.'
-\footnotetext{Rou, Shi. 1975. \textit{Roushi xiaoshuo xuanji [Selected novels of Roushi]}, 31. Beijing: People's Literature Publishing House.}
+\footnotetext{\objex{Rou2}, \objex{Shi2}. 1975. \obj{Rou2} \obj{Shi2} \obj{xiao3shuo1} \obj{xuan3ji2} \textit{[Selected novels of Roushi]}, 31. Beijing: People's Literature Publishing House.}
 
 \ex\label{ex:AByiAB-li}
 \gll \objex{fei1chang2} \objex{yan2su3} de \objex{ba3} \objex{jin4shi4} \objex{yan3jing4} \obj{duan1zheng4-le-yi-duan1zheng4}.\footnotemark\\
 very seriously \textsc{de} \textsc{ba} nearsighted glasses straighten-\textsc{pfv}-one-straighten\\
 \glt `[He] very seriously straightened the nearsighted glasses quickly.'
-\footnotetext{Li, Jieren. 1962. \textit{Da bo [Great wave]}, 3rd band, 171. Beijing: The Writers Publishing House.}
+\footnotetext{\objex{Li3}, \objex{Jie2ren2}. 1962. \obj{Da4} \obj{bo1} \textit{[Great wave]}, 3rd band, 171. Beijing: The Writers Publishing House.}
 
 \ex\label{ex:ABleyiAB-ccl}
 \gll \objex{ji3duo1} \objex{san3luan4}-zhe de \objex{chuan2} \objex{li3} de \objex{deng1guang1}, \objex{ye3} \objex{hu1yin1hu1mie4} de \obj{bian4huan4-le-yi-bian4huan4} \objex{wei4zhi}.\\
@@ -480,7 +528,7 @@ these rare occurrences can be seen as relics of this usage.
 AAB, A-\textit{yi}-AB, A-\textit{le}-AB, AA-\obj{kan4} and A-\obj{kan4}-\obj{kan4} can also be accounted for by the lexical rules proposed in this section.
 They can be analyzed as compounds consisting of a reduplicated monosyllabic verb and another element.
 Specifically, AAB, A-\textit{yi}-AB and A-\textit{le}-AB can be considered as the compound of a reduplicated monosyllabic verb (A) and a noun (B).\footnote{
-    \citet[64--65]{Huang1984} and \citeauthor{Her1996} (\citeyear[Sec. 2]{Her1996}; \citeyear[Sec. 3.1]{Her2010}) argued that some of these V-O combinations are compounds, some are phrases, and some have dual status (both compounds and phrases).
+    \citet[64--65]{Huang1984} and \citeauthor{Her1996} (\citeyear[Sec. 2]{Her1996}; \citeyear[Sec. 3.1]{Her2010}) argue that some of these V-O combinations are compounds, some are phrases, and some have dual status (both compounds and phrases).
     Following this approach, AAB, A-\textit{yi}-AB and A-\textit{le}-AB can (also) be considered as the phrasal combination of a reduplicated verb and its object.
 }
 AA-\obj{kan4} can be regarded as the compound of a reduplicated monosyllabic verb (A) and the verb \obj{kan4} `look',
