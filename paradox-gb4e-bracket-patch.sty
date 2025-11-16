@@ -1,0 +1,33 @@
+
+
+\def\@xlist#1[#2]{\ifnum \@xnumdepth >3 \@toodeep\else%
+    \advance\@xnumdepth \@ne%
+    \edef\@xnumctr{xnum\romannumeral\the\@xnumdepth}%
+    \def\@bla{#1}
+    \ifx\@bla\empty\xs@default{\romannumeral\the\@xnumdepth}\else%
+      \expandafter\let\csname @xs\romannumeral\the\@xnumdepth\endcsname#1\fi
+    \begin{list}{(\csname the\@xnumctr\endcsname)}%
+                {\usecounter{\@xnumctr}\@subex{#2}{1.5ex}}\fi}
+
+
+
+
+
+
+% Alternatively:
+
+
+% \makeatletter
+
+% %%% Lazy abbrevs (HANDLE WITH CARE!)
+% \def\ea{\ifnum\@xnumdepth=0\begin{exe}[(34)]\else\begin{xlistabr}[(m)]\fi\ex}
+% %\def\ea{\ifnum\@xnumdepth=0\begin{exe}[(\theequation)]\else\begin{xlist}[iv.]\fi\ex}
+% \def\eas{\begin{samepage}\ifnum\@xnumdepth=0\begin{exe}[(34)]\else\begin{xlist}[iv.]\fi\ex}
+% \def\eaa{\ifnum\@xnumdepth=0\begin{exe}[(\theequation)]\else\begin{xlist}[iv.]\fi\ex}
+% \def\z{\ifnum\@xnumdepth=1\end{exe}\else\end{xlistabr}\fi}
+% \def\zs{\ifnum\@xnumdepth=1\end{exe}\else\end{xlist}\fi\end{samepage}}
+% \def\zt{\ifnum\@xnumdepth=1\end{exe}\else\end{xlist}\fi\end{tabular}}
+% % if an example is final in a footnote
+% \def\zlast{\ifnum\@xnumdepth=1\end{exe}\else\end{xlist}\fi\vspace{-\baselineskip}}
+
+% \makeatother

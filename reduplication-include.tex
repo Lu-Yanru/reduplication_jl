@@ -1,3 +1,46 @@
+%% -*- coding:utf-8 -*-
+\section{Introduction}\label{sec:intro}
+
+In Mandarin Chinese, verbs can be reduplicated to express a delimitative aspectual meaning (e.g. \citealt[204--205]{Chao1968}; \citealt[232]{LiThompson1981};  \citealt[14]{Li1996}; \citealt[70]{Dai1997};  \citealt[382--383]{Zhu1998}; \citealt[420--421]{Xing2000}; \citealt[48]{Chen2001};  \citealt[288]{Tsao2001}; \citealt[11--12]{Yang2003}; \citealt[Sec.\,4.3]{XiaoMcEnery2004}). 
+This means that the event or state denoted by the verb happens in a short duration and/or a low frequency \citep[155]{XiaoMcEnery2004}, such as illustrated in (\ref{ex:redup-ex}).\footnote{Reduplications
+    in the example sentences will be set in italics.}
+Thus, verbal reduplication in Mandarin Chinese is often translated as doing something ``a little bit/for a little while''.
+
+\ea\label{ex:redup-ex} 
+	\ea
+	\gll \objex{qing3} \objex{ni3} \objex{chang2} \objex{zhe4} \objex{dao4} \objex{cai4}.\\
+	please you taste this \textsc{clf} dish\\
+	\glt `Please taste this dish.'
+	
+	\ex
+	\gll \objex{qing3} \objex{ni3} \obj{chang2}-\obj{chang} \objex{zhe4} \objex{dao4} \objex{cai4}.\\
+	please you taste-taste this \textsc{clf} dish\\
+	\glt `Please taste this dish a little bit.' 
+	\z
+\z
+
+The current study tries to determine a suitable formal and unified analysis for the structure of verbal reduplication in Mandarin Chinese.
+It contributes more empirical evidence and 
+offers a novel analysis in the theoretical framework of Head-driven Phrase Structure Grammar (HPSG; \citealt{PollardSag1994, Sag1997, HPSGHandbook-2}) to this phenomenon 
+using Minimal Recursion Semantics (MRS; \citealt{Copestakeetal2005}) as the semantic representation formalism.
+This new account of reduplication avoids the problems of previous approaches and
+explains more forms of deliminative verbal reduplication in Mandarin Chinese.
+
+This paper is organized as follows: 
+after this introduction, we will present in \sectref{sec:phen} the forms and syntactic distribution as well as the semantics of verbal reduplication in Mandarin Chinese. 
+Importantly, we restrict the object of this study to the AA, A-\textit{yi}-A, A-\textit{le}-A, A-\textit{le}-\textit{yi}-A, ABAB and AB-\textit{le}-AB forms of verbal reduplication in Mandarin Chinese.
+We will also discuss in this section, with the help of corpus data, the question of whether the reduplication is better analyzed as a morphological or a syntactic process.
+In \sectref{sec:prev}, we will discuss the advantages and drawbacks of previous approaches. 
+\sectref{sec:analysis} will present a new {HPSG} account for verbal reduplication in Mandarin Chinese.
+Finally,  \sectref{sec:conclu} will conclude the paper.
+
+The data in this paper was drawn from several sources.
+In addition to introspection, the Modern Chinese subcorpus of the corpus of the \textit{Center for Chinese Linguistics of Peking University} ({CCL}; \citealt{Zhanetal2003, Zhanetal2019}) and the BCC corpus \citep{BCC} were also consulted. 
+Further, examples from novels and plays written by native speakers were considered.
+Corpus data provides natural and contextualized examples, and contains a variation of linguistic properties \citep[921]{MM2009a}.
+This can help us discover relevant constraints that can otherwise go unnoticed through
+introspection.
+
 \section{The phenomenon}\label{sec:phen}
 
 This section introduces the fundamental grammatical behaviors of verbal reduplication in Mandarin Chinese.
@@ -1227,6 +1270,1199 @@ In sum, we maintain that verbal reduplication in Mandarin Chinese is better off 
 %This makes the behavior of the reduplication seem more similar to that of a Parallel Verb Compound than that of an {SVC}.
 %Therefore, it seems more appropriate to assume reduplication to be a morphological process rather than a syntactic one. 
 
+
+
+
+\section{Previous analyses}\label{sec:prev}
+
+Previous analyses on the reduplication in Mandarin Chinese and in other languages can be classified
+into three groups:  the reduplication as a verbal classifier phrase (\sectref{sec:clf}), as an aspect modifier (\sectref{sec:asp}), and
+as a special reduplication construction (\sectref{sec:construc}).\footnote{The term \textit{construction} is used here in its general sense, not in the sense of Construction Grammar.} 
+This section will review these analyses and will discuss their advantages and shortcomings.
+
+
+
+%%%%%%%%%%%
+\subsection{The reduplication as a verbal classifier phrase}\label{sec:clf}
+
+\citet{Fan1964}, \citet[205]{Chao1968} and \citet{Xiong2016} analyze the reduplication in Mandarin Chinese
+as a verbal classifier phrase\footnote{Alternative terms for \textit{verbal classifier}: \textit{measure for verbs of action} in \citet[615]{Chao1968} or \textit{cognate object} in \citet[312]{Chao1968} and  \citet[263]{Hong1999}.
+The \textit{verbal classifier phrase}  is also termed \textit{quantity adverbial} in \citet[352--353]{LiThompson1981} or \textit{frequency phrase} in \citet[91]{Huangetal2009}.}.
+A verbal classifier is ``a measure for verbs of action expresses the number of times an action takes place” \citep[615]{Chao1968}, such as the \obj{ci4} in (\ref{ex:clf}). 
+
+%\settowidth\jamwidth{(Chomsky, 1957: 15)}
+\ea\label{ex:clf}
+\gll \objex{mei2} \objex{che3}-\objex{guo} \objex{yi2} \objex{ci4} \objex{huang3}\\
+not tell-\textsc{exp} one \textsc{clf} lie\\ \hfill {\citep[616]{Chao1968}}
+\glt `haven't told lie once'
+\z
+
+In this analysis, the first element in the reduplication is the actual verb, 
+the second element is a verbal classifier borrowed from a verb, 
+and \obj{yi} `one' is an optional pseudo-numeral that only has an abstract `a little bit' meaning.
+The analysis is syntactic.
+
+The parallel between the reduplication and a verbal classifier phrase is obvious. 
+Both the reduplication and the verbal classifier phrase serve to quantify the duration or the extent of a situation. 
+A reduplication structure can often be paraphrased into a verbal classifier phrase such as \obj{yi2} \obj{xia4} `once, a while', \obj{yi2} \obj{hui4} `a while', as illustrated in (\ref{ex:redup-clf}).
+
+\ea\label{ex:redup-clf}
+	\ea \gll \obj{deng3}-\obj{deng3} \objex{wo3}.\\
+		wait-wait I\\
+		\glt `Wait for me a little bit.'
+	\ex \gll \objex{deng3} \objex{wo3} \objex{yi2} \objex{xia4}.\\
+	wait I one \textsc{clf}\\
+	\glt `Wait for me a little while.'
+	\z
+\z
+
+However, there are several arguments suggesting that the reduplication cannot be analyzed the same way as a verbal classifier phrase. First, the verb and the verbal classifier can be separated (\ref{ex:clf-sep}), while the reduplication cannot (\ref{ex:redup-sep}) \citep[269]{Paris2013}.\footnote{
+  \label{fn:vclpron}
+One reviewer notes that the objects that can be placed in between the verbal classifier phrase is usually limited to pronouns and proper nouns.
+We found some examples from the corpus showing that not only pronouns and proper nouns can be placed before \obj{yi2} \obj{xia4} `once':
+\ea%她看了他的脸一下。(CCL)
+\gll \objex{ta1} \objex{kan4-le} \objex{ta1de} \objex{lian3} \objex{yi2} \objex{xia4}.\\
+she look-\textsc{pfv} his face one \textsc{clf}\\\jambox{(CCL)}
+\glt `She took a look at his face.'
+
+\ex%他没碰窗户，就看了玻璃一下，玻璃就烂了。(CCL)
+\gll \objex{ta1} \ldots\, \objex{jiu4} \objex{kan4-le} \objex{bo1li} \objex{yi2} \objex{xia4}, \objex{bo1li} \objex{jiu4} \objex{lan4-le}.\\
+he {} just look-\textsc{pfv} glass one \textsc{clf} glass just break-\textsc{pfv}\\\jambox{(CCL)}
+\glt `He just took a look at the glass and the glass just broke.'
+\z
+We think it has to do with the length of the object, i.e. shorter objects can be placed before  \obj{yi2} \obj{xia4} `once' while longer ones cannot.
+%This is not necessarily a syntactic constraint
+See also footnote~\ref{fn:vnv}.
+
+%Even if we accept that the object can be only be placed before  \obj{yi2} \obj{xia4} `once' in limited cases,
+%the fact that the object can be placed before  \obj{yi2} \obj{xia4} `once' in some cases but in no cases in between reduplication suggests there is a fundamental difference between the structure of the two phenomena.
+}
+$^,$
+\footnote{\label{fn:vnv}%
+A reviewer points out that there are examples such as \obj{deng3} \obj{wo3} \obj{yi} \obj{deng3} `wait for me a bit'
+and \obj{kan4} \obj{ta1} \obj{yi} \obj{kan4} `take a look at him' in corpora,
+where A-\obj{yi}-A seems to be separated by pronouns like \obj{wo3} `I' or \obj{ta1} `he'.
+We searched the CCL corpus, and the texts containing such expressions are either written before the 1990s 
+or written to imitate Old Mandarin (e.g. in fictions based in an ancient Chinese setting).
+Our native speaker informants said that they can understand these expressions, 
+but these expressions sound antiquated,
+and they will not use them in their daily life.
+They also completely rejected A-\obj{yi}-A being separated by complex noun phrases, such as *\obj{deng3} \obj{na4} \obj{ren2} \obj{yi} \obj{deng3} `wait for \textit{that person} a bit',  *\obj{kan4} \obj{ta1de} \obj{lian3} \obj{yi} \obj{kan4} `take a look at \textit{his face}'.
+In contrast, the verbal classifier counterparts are totally acceptable: \obj{deng3} \obj{na4} \obj{ren2} \obj{yi} \obj{xia4} `wait for that person a bit',  \obj{kan4} \obj{ta1de} \obj{lian3} \obj{yi} \obj{xia4} `take a look his face' (see also footnote~\ref{fn:vclpron}).
+Furthermore, AA cannot be separated even by pronouns: *\obj{deng3} \obj{wo3} \obj{deng3} `wait for me a bit',  *\obj{kan4} \obj{ta1} \obj{kan4} `take a look at him'.
+Considering that reduplication developed from verbs being borrowed as verbal classifiers (\citealt{Zhang2000}, see also Appendix~\ref{app:hist} for a short discussion on the historical development of reduplication),
+we consider cases such as \obj{deng3} \obj{wo3} \obj{yi} \obj{deng3} `wait for me a bit'
+and \obj{kan4} \obj{ta1} \obj{yi} \obj{kan4} `take a look at him' to be in the process of grammaticalization and thus not a form of reduplication we study here.
+}
+
+\ea\label{ex:clf-sep}
+  \ea \gll \objex{ni3} \objex{deng3} \objex{yi2} \objex{xia4} \objex{Zhang1san1}!\\
+   you wait one \textsc{clf} Zhangsan\\
+   \glt `Wait for Zhangsan for a while!'
+  \ex \gll \objex{ni3} \objex{deng3} \objex{Zhang1san1} \objex{yi2} \objex{xia4}!\\
+   you wait Zhangsan one \textsc{clf}\\
+   \glt `Wait for Zhangsan for a while!'
+\z
+\z
+
+\ea\label{ex:redup-sep}
+  \ea[]{\gll \objex{ni3} \obj{deng3}-\obj{yi}-\obj{deng3} \objex{Zhang1san1}!\\
+   you wait-one-wait Zhangsan\\
+   \glt `Wait for Zhangsan a little bit!'}
+  \ex[*]{\gll \objex{ni3} \obj{deng3} \objex{Zhang1san1} \obj{yi} \obj{deng3}!\\
+  you wait Zhangsan one wait\\}
+\z
+\z
+
+Second, unlike verbal classifiers (\ref{ex:clf-num}), the \obj{yi} ‘one’ in A-\obj{yi}-A cannot be replaced by other numerals (\ref{ex:redup-num}) \citep[299--230]{YangWei2017}.
+
+\ea\label{ex:clf-num}
+  \ea \gll \objex{ta1} \objex{pai1}-le \objex{wo3} \objex{yi2} \objex{xia4}.\\
+   he pat-\textsc{pfv} I one \textsc{clf}\\
+   \glt `He patted me once.'
+   \ex \gll \objex{ta1} \objex{pai1}-le \objex{wo3} \objex{liang3} \objex{xia4}.\\
+    he pat-\textsc{pfv} I two \textsc{clf}\\
+    \glt `He patted me twice.'
+\z
+\z
+
+\ea\label{ex:redup-num}
+  \ea[]{\gll \objex{ta1} \obj{pai1}-\obj{le}-\obj{yi}-\obj{pai1} \objex{wo3}.\\
+   he pat-\textsc{pfv}-one-pat I\\
+   \glt `He patted me a little bit.'}
+   \ex[*]{\gll \objex{ta1} \obj{pai1}-\obj{le}-\obj{liang3}-\obj{pai1} \objex{wo3}.\\
+   he pat-\textsc{pfv}-two-pat I\\}
+\z
+\z
+
+Third, idioms (\ref{ex:idiom}) lose their idiomatic meaning when used with verbal classifiers (\ref{ex:clf-idiom}), but maintain their idiomatic meaning with reduplications (\ref{ex:redup-idiom}) \citep[230--231]{YangWei2017}.\footnote{
+This applies except when \obj{yi2} \obj{xia4} `once' is used. 
+Because of this exception, one reviewer suggests that the loss of the idiomatic meaning in (\ref{ex:clf-idiom}) 
+but not in (\ref{ex:redup-idiom}) may be attributed to the use of the numeral \obj{san1} `three' in (\ref{ex:clf-idiom}),
+because if \obj{san1} \obj{xia4} `three times' is replaced with \obj{yi2} \obj{xia4} `once' in (\ref{ex:clf-idiom}), he/she can still get the idiomatic interpretation.
+We suggest that it is not \obj{san1} \obj{xia4} `three times' that is special, 
+but it is \obj{yi2} \obj{xia4} `once' that is special.
+We can replace \obj{san1} `three' with any number above two,
+and the distinction still exist.
+But \obj{yi2} \obj{xia4} `once' has acquired a duration reading `for a little while' that is not available to the other event quantifiers formed by \obj{xia4}, which only have the `for X times' interpretation (\citealt[77]{Deng2013}, \citealt[16]{Zhang2000}).
+We think \obj{liang3} \obj{xia4} `twice' is following this tendency, too.
+In this case, it is easy to interpret \obj{yi2} \obj{xia4} and \obj{liang3} \obj{xia4} not as referring to the actual number of action taking place,
+but as duration adverbials as a whole,
+thus differing them from ``actual'' verbal classifier phrases with other numerals.
+}
+
+\ea
+  \ea\label{ex:idiom}
+  \gll \objex{bao4} \objex{fo2}-\objex{jiao3}\\
+  clasp Buddha-foot\\
+   \glt Literal: `clasp the Buddha's foot'\\
+   Idiomatic: `make a last-minute effort'
+   
+   \ex\label{ex:clf-idiom}
+   \gll \objex{ta1} \objex{kao3shi4} \objex{qian2} \objex{bao4}-le \objex{san3} \objex{xia4} \objex{fo2}-\objex{jiao3}.\\
+   he exam before clasp-\textsc{pfv} three \textsc{clf} Buddha-foot\\
+   \glt `He clasped the Buddha's foot three times before the exam.' (idiomatic reading unavailable)
+   
+   \ex\label{ex:redup-idiom}
+   \gll \objex{ta1} \objex{kao3shi4} \objex{qian2} \obj{bao4}-\obj{le}-\obj{bao4} \objex{fo2}-\objex{jiao3}.\\
+   he exam before clasp-\textsc{pfv}-clasp Buddha-foot\\
+   \glt Literal: `He clasped the Buddha's foot a little bit before the exam.'\\
+   Idiomatic: `He made a bit of a last-minute effort before the exam.'
+\z
+\z
+
+Based on these observations, it seems inappropriate to view the reduplication as a kind of verbal classifier phrase.
+
+
+
+
+
+
+%%%%%%%%%%%
+\subsection{The reduplicant as an aspect modifier}\label{sec:asp}
+
+A number of studies consider the reduplication to be an element that modifies the aspectual properties of the base verb \citep{Arcodiaetal2014, BascianoMelloni2017, YangWei2017} 
+due to the delimitative aspectual meaning of reduplication. 
+%\citet{Travis1999, Travis2000} also analyzes the reduplication in Tagalog as an imperfective aspect marker.
+ 
+ 
+ 
+ 
+ %%%%%%
+%Arcodiaetal2014, BascianoMelloni2017
+ 
+ \citet{Arcodiaetal2014} and \citet{BascianoMelloni2017} analyze the reduplication within the
+framework of First Phase Syntax \citep{Ramchand2008}.
+\citet{Ramchand2008} proposes that an event is comprised of the following phrases: 
+the causative subevent (\textit{init}P), the process subevent (\textit{proc}P) and the result subevent (\textit{res}P), which are ordered hierarchically, as illustrated in \figref{tree:ramchand}.\footnote{
+The present study does not argue for a {NP} or a {DP} analysis and simply takes over the illustration provided in the cited papers.}
+Dynamic and volitional verbs have the features [init proc] and are therefore located under \textit{init} and \textit{proc}  \citetext{\citealp[24]{Arcodiaetal2014}; \citealp[147]{BascianoMelloni2017}}.  
+Achievement verbs possess the feature [res] and reside under \textit{res}  \citetext{\citealp[24]{Arcodiaetal2014}; \citealp[147]{BascianoMelloni2017}}. 
+Stative verbs do not contain a \textit{proc}P \citep[152]{BascianoMelloni2017}.
+
+
+\begin{figure}
+ \centering
+\begin{forest}
+[\textit{init}P (causing projection) [DP$_3$\\subject of `cause']
+  [ [init]
+    [\textit{proc}P (process projection)
+      [DP$_2$\\subject of `process']
+      [[\textit{proc}]
+        [\textit{res}P (result projection)
+        [DP$_1$\\subject of `result']
+          [[\textit{res}] [XP]
+          ]
+        ]
+      ] ]
+    ]
+  ]
+\end{forest} 
+\caption{Event structure according to \citet[193]{Ramchand2008}}
+\label{tree:ramchand}
+\end{figure}
+
+ 
+\citet{Arcodiaetal2014} and \citet{BascianoMelloni2017} assume that the first element in the reduplication is the actual verb, which resides under \textit{init} and \textit{proc}, 
+and that the second element is the copy of the verb, which resides in the complement position of \textit{proc} and serves as an event delimiter.
+Since the second element occupies the same syntactic position as \textit{res}P, it should have complementary distribution with \textit{res}P
+and should thus be incompatible with achievement verbs because of their [res] feature.
+Furthermore, if \textit{proc}P does not exist in the event, as in the case of states, there should be no place for the reduplication either.
+
+This analysis correctly predicts that the reduplication of achievement verbs and stative verbs is not as easily acceptable as that of dynamic and volitional verbs (marked by [init, proc] features).
+
+However, as shown in \sectref{sec:Aktionsarten}, the reduplication of states and achievements is unusual but not impossible.
+This suggests that the reduced acceptability of reduplicated achievement and stative verbs is \textit{semantic} rather than \textit{structural}. 
+Their use is possible in specific contexts and should not be ruled out \textit{syntactically}.
+Consequently, this proposal does not seem to offer an appropriate account for  reduplication.
+ 
+ 
+ 
+ 
+ %%%%%%
+ %YangWei2017, Tsai2008
+ 
+ \citet[229]{YangWei2017} endorse the analysis of  reduplication as an aspect marker 
+ following the structure of Mandarin Chinese aspects proposed by \citet{Tsai2008}.
+\citet{YangWei2017} did not spell out the exact analysis.
+We infer the analysis for reduplication based on \citet{Tsai2008},
+ and show in Appendix~\ref{app:tsai} that \citeauthor{Tsai2008}'s (\citeyear{Tsai2008}) system 
+ has a syntax-semantics mismatch problem.
+
+%In sum, both analyses of the reduplicant as an aspect modifier do not seem to be convincing.
+
+
+
+
+ 
+ 
+%%%%%%%%%%%%
+\subsection{Reduplication construction}\label{sec:construc}
+ 
+%The following section discusses previous literature which proposed a special construction for the reduplication.
+ 
+
+ %%%%%%%
+%Ghomeshietal2004
+
+%\citet{Ghomeshietal2004} provided an analysis within the theoretical framework of Parallel Architecture \citep{Jackendoff1997, Jackendoff2002} for Contrastive Reduplication (CRs) in English like (\ref{ex:salad}),\footnote{Capitalization indicates contrastive intonation.} 
+%as shown in Figure~\ref{ghomeshi-cr}.\footnote{{P} = phonological unit, {P/E/S CTR} = prototypical/extreme/salient contrast, XP$^{min}$ = XP without its specifier} 
+%They postulated a new syntactic category {CR}$^{syn}$ to incorporate the reduplicant.
+%It has the semantics of {P/E/S CTR} and an empty phonological content that copies from the phonology of the base it applies to.
+%According to their observations, the base can be an X (e.g. \textit{SALAD-salad}) or an XP$^{min}$ (e.g. \textit{OVER-THE-HILL-over-the-hill}).
+%In Figure~\ref{ghomeshi-cr}, {CR}$^{syn}$ is coindexed with the first {P}, 
+%which is in turn coindexed with the phonology of X/XP$^{min}$ (P$_k$). 
+%{CR}$^{syn}$ is coindexed with the semantics of {P/E/S CTR}, 
+%which modifies the semantics of  X/XP$^{min}$ (Z$_k$).
+%\ea\label{ex:salad}
+%I make the tuna salad, and you make the \textit{SALAD-salad}.
+%\z
+%\begin{figure}[h!]
+%\centering
+%\begin{multicols}{3}
+%\begin{minipage}[t]{.3\linewidth}
+%\begin{center}
+%Phonology\\
+%\vspace{15pt}
+%P$_{j, k}$ P$_k$
+%\end{center}
+%\end{minipage}
+%\columnbreak
+%\begin{minipage}[t]{.3\linewidth}
+%\begin{center}
+%Syntax\\
+%\begin{forest}
+%for tree = {inner sep = 0pt,
+%	s sep = 1pt,
+%	anchor=children last,
+%    	align=center}
+%[X/XP$^{min}$
+% [CR$^{syn}$$_j$]
+% [X/XP$^{min}$$_k$]
+%]
+%\end{forest}
+%\end{center}
+%\end{minipage}
+%\columnbreak
+%\begin{minipage}[t]{.3\linewidth}
+%\begin{center}
+%Semantics
+%\[
+%\begin{bmatrix}
+%Z_{k}\\
+%\begin{bmatrix}
+%P/E/S\\
+%CTR
+%\end{bmatrix}_{\!j}
+%\end{bmatrix}
+%\]
+%\end{center}
+%\end{minipage}
+%\end{multicols}
+%\caption{Analysis for {CR}s in English according to \citet[344]{Ghomeshietal2004}}
+%\label{ghomeshi-cr}
+%\end{figure}
+ 
+%Applying this to the reduplication in Mandarin Chinese, the structure should be something like \figref{ghomeshi-cn}.\footnote{{DELIM} = delimitative}\textsuperscript{,}\footnote{
+%Although the reduplication in Mandarin Chinese does not have a contrastive meaning, 
+%we preserve the notation of CR$^{syn}$ in \citet{Ghomeshietal2004} here to simply refer to the reduplicant.}
+%The base verb is coindexed with its phonology and its semantics `look'. 
+%The phonology of the reduplicant is coindexed with the phonology of the verb.
+%The reduplicant is coindexed with the delimiative semantics
+%and modifies the semantics of the base verb.
+%The base verb and the reduplicant combine to a V.\footnote{In English, it makes sense to assume CR$^{syn}$ to be a syntactic unit, because the base can be XP$^{min}$ (e.g. \textit{OVER-THE-HILL-over-the-hill}). 
+%But for Mandarin Chinese, the base can only be V.
+%As \citet[353]{Ghomeshietal2004} wrote: ``when applying to its smallest scope, X inside of a word, it has the feel of other things that attach there, i.e., morphological affixes''.
+%It seems that it suffices to assume the reduplication in Mandarin Chinese to be a morphological phenomenon (cf. \sectref{sec:word}).
+%We continue to call the second column ``syntax'' to preserve the consistency of the notations.
+%}
+%We draw the head on the left because all analyses mentioned above considered the first element in the reduplication to be the actual verb and the second element the reduplicant, 
+%but this analysis itself does not forbid the head to be on the right side.
+
+%\begin{figure}[h!]
+%\centering
+%\begin{minipage}[t]{.3\linewidth}
+%\begin{center}
+%Phonology\\
+%\begin{forest}
+%[P$_{j}$ [kan]] 
+%\end{forest}
+%\begin{forest}
+%[P$_{j, k}$ [kan]]
+%\end{forest}
+%\end{center}
+%\end{minipage}
+%\columnbreak
+%\begin{minipage}[t]{.3\linewidth}
+%\begin{center}
+%Syntax\\
+%\begin{forest}
+%[V
+% [V$_j$]
+% [CR$^{syn}$$_k$]
+%]
+%\end{forest}
+%\end{center}
+%\end{minipage}
+%\columnbreak
+%\begin{minipage}[t]{.3\linewidth}
+%\begin{center}
+%Semantics
+%\[
+%\begin{bmatrix}
+%\begin{bmatrix}
+%DELIM\\([LOOK]_{j})
+%\end{bmatrix}_{\!k}\\
+%\end{bmatrix}
+%\]
+%\end{center}
+%\end{minipage}
+%\caption{Analysis for AA following \citet{Ghomeshietal2004}}
+%\label{ghomeshi-cn}
+%\end{figure}
+
+
+%As for the other forms of reduplication, A-\textit{le}-A can be viewed as two compositional processes \mbox{[[[A] -\textit{le}] -A]}.
+%Furthermore, the \textit{yi} in A-\textit{yi}-A and A-\textit{le}-\textit{yi}-A can simply be viewed as a dangling phonological unit. 
+%In this case, \phonliste{ yi } is neither coindexed with a syntactic unit nor with a semantic one.
+
+%This analysis correctly captures the fact that the addition of \textit{yi} does not change the syntactic and semantic behavior of the reduplication.
+%It also provides a formal account for the phonology of the reduplication.
+%Nevertheless, by assuming a construction specially for the reduplication, this approach fails to account for the similarities of the reduplication and other aspect markers in Mandarin Chinese, unlike the affixation analyses described in \sectref{sec:asp}.
+
+ 
+ 
+ 
+ 
+ 
+ %%%%%%%%%%%%%%
+ %FanSongBond2015
+ 
+\citet*{FanSongBond2015} provide a unified HPSG analysis for the reduplication of both verbs and adjectives in Mandarin Chinese.
+They consider reduplication to be a morphological process and model it via lexical rules.
+They provide the lexical rule (\ref{avm:fsb-redup}) for reduplication in general,
+and further propose \type{redup-a-lr} and \type{redup-v-lr} as subtypes of \type{redup-type}, 
+as illustrated in (\ref{avm:fsb-redup-a}) and (\ref{avm:fsb-redup-v}) respectively.\footnote{%
+  Note that the format in which the lexical rule is given is not the input--output format usually
+  used for lexical rules in HPSG. Instead it is depicted as a unary branching phrase structure
+  rule: the input is the daughter on the right-hand side of the rule. The output is the mother on
+  the left-hand side. The view of lexical rules as unary branching rules is adopted in most current work on
+  lexical rules \citep{BC99a,Meurers2001a} despite the notation that is commonly assumed.  
+
+  \textsc{hook} is a technical feature for sharing information. \textsc{ltop} and \textsc{lbl} will
+  be explained in Section~\ref{sec:analysis} below.
+}
+For them, the reduplication functions as an intensifier predicate, as represented in the \textsc{predicate (pred)} in the \textsc{constructional-content (c-cont)}.
+The \type{intensifier\_x\_rel} has two subtypes: \type{redup\_up\_x\_rel} for the amplifiying meaning of adjectival reduplication and \type{redup\_down\_x\_rel} for the delimitative meaning of verbal reduplication.
+The orthography is handled separately.
+The AABB form for adjectives and the ABAB form for verbs, as well as the AAB form for V-O compounds, are handled as irregular derivation forms.
+
+
+\ea\label{avm:fsb-redup}
+\avm{
+[\type*{redup-type}\\
+cat\textbar head & \1\\
+val & \2\\
+cont & \3 \normalfont \textsc{hook} [ltop & \4\\
+			ind & \5]\\
+c-cont & <[\type*{event-rel}\\
+		pred & intensifier\_x\_rel\\
+		lbl & \4\\
+		arg1 & \5]>
+]
+}
+$\to$
+\avm{
+[cat\textbar head & \1\\
+val & \2\\
+cont & \3
+]
+}
+\z
+
+
+\ea\label{avm:fsb-redup-a}
+\avm{
+[\type*{redup-a-lr $\subset$ redup-type}\\
+cat\textbar head & adjective\\
+val & [spr <>]\\
+c-cont & <[pred & redup\_up\_x\_rel]>
+]
+}\\
+\textsc{orthography}: A $\to$ AA; (irregular AB $\to$ AABB)
+\z
+
+\ea\label{avm:fsb-redup-v}
+\avm{
+[\type*{redup-v-lr $\subset$ redup-type}\\
+cat\textbar head & verb\\
+cont\textbar hook & [aspect & non-aspect]\\
+c-cont & <[pred & redup\_down\_x\_rel]>
+]
+}\\
+\textsc{orthography}: A $\to$ AA; A $\to$ A-\textit{yi}-A; (irregular AB $\to$ ABAB)
+\z
+
+This approach provides a unified account for adjectival and verbal reduplication.
+Their commonalities are captured by inheritance hierarchies of the intensifier predicates and the lexical rules.
+In the case of verbal reduplication, A-\textit{yi}-A is analyzed as an alternative orthographical form of AA.
+This correctly captured the intuition that AA and A-\textit{yi}-A express the same meaning and only differ from each other phonologically/orthographically (see \sectref{sec:core-sem}).
+
+Nevertheless, this analysis has some shortcomings.
+To begin with, since the combination with aspect markers is completely forbidden, it is impossible for this approach to account for A\hyp{}\textit{le}\hyp{}A.
+Moreover, as verbal reduplication is  considered to express a delimitative aspectual meaning,
+it seems unconvincing to assume that there is no aspect information in its semantics.
+We consider a semantic explanation as described in  \sectref{sec:aspM} to be more reasonable for ruling out aspect markers other than \textit{le}.
+Furthermore, this account can only deal with monosyllabic reduplication and handles ABAB and AAB as irregular forms, for the reason that ABAB and AAB reduplication of AB verbs ``are not very productive in Chinese'' \citep[102]{FanSongBond2015}.
+This is not true. 
+\citet[33]{Xing2000stat}, \citet[161]{BascianoMelloni2017}, \citet[329]{MelloniBasciano2018} and  \citet[Sec.\,3.1]{Xie2020}  all consider both AA and ABAB to be productive,
+and \citet[36]{Xing2000stat} concludes that AAB is productive as well.
+Thus, these forms should not be handled as  irregular forms, but should be derivable by lexical rules.
+
+
+ 
+ 
+
+
+The shortcomings of previous analyses lead us to propose a new analysis on verbal reduplication with {HPSG}, 
+that formalizes the phonology of the reduplication, resolves the problem of \textit{yi} and preserves the generalization on aspect marking, 
+as we will elaborate in \sectref{sec:analysis}. 
+
+
+\section{A new HPSG analysis}\label{sec:analysis}
+
+In this section, we suggest a new lexical-rule-based analysis of aspect marking and reduplication
+using Minimal Recursion Semantics (MRS; \citealt{Copestakeetal2005}). %, as proposed in \citet{LuMueller2021}.
+MRS is one instance of underspecified semantics as is currently used in theoretical and
+computational work in HPSG (\citealt[Section~6]{KR2024a}, \citealt[Section~3]{BFO2002a-u},
+\citealt[Section~4.4]{MuellerCoreGram}, \citealt[Chapter~5]{MuellerLehrbuch4}). The advantage of
+such types of semantics is that scope relations can be left underspecified. This way it is avoided
+that large numbers of analyses are assigned to single sentences. Instead sentences are paired with
+underspecified semantic representations from which various readings can be derived.
+MRS uses lists of elementary predications that are connected via pointers. Scope constraints are
+represented by statements of domination. This allows for elegant ways to underspecify scope. The
+details cannot be discussed here. The interested reader is referred to \citet{Copestakeetal2005},
+\citet[Section~6]{KR2024a} or for the use of MRS in a grammar of German to \citet[Chapter~5]{MuellerLehrbuch4}. In
+what follows, we will present the elementary predications with the features assumed in MRS, but leave
+out handle constraints to keep things simple.
+
+Like \citet{FanSongBond2015}, we assume lexical rules for reduplication. Our lexical rules are
+organized in an inheritance network. \textit{verbal-reduplication-lr} is the most general type for
+reduplication lexical rules in this network and the implicational constraint in (\ref{avm:redup}) shows the constraints on all
+structures of type \textit{verbal-reduplication-lr}. Such structures take a verb as
+\textsc{lexical-daughter (lex-dtr)}.  The output reduplicates the \textsc{phonology (phon)} of the
+input verb with the possibility to have further phonological material in between.  \etag{} indicates
+an underspecified list which could be empty or not.\footnote{%
+The \etag is equivalent to a tag with a number with the difference that \etag is never shared. We
+follow Müller (\citeyear[161]{Mueller2002b}, \citeyear[294]{Mueller2003e}) and elsewhere in using this
+notation, since we think this is more
+precise than simply using three dots.}
+A delimitative relation is appended to the
+\textsc{relations (rels)} value of the input verb, and it takes the event index of the input verb \iboxb{3} as
+argument (\textsc{arg0}, \ldots, \textsc{arg3} are feature names for arguments. The values are
+indices or events similar to variables in normal predicate logic.). The list of relations contains so-called elementary predications. There is no complicated
+embedding of relations. Instead each elementary predication comes with a label (\textsc{lbl}). The
+label can be used as an argument of another relation or in scope constraints, which are not provided
+here to keep things simple. The feature \textsc{ltop} points to the local top. This is the
+elementary predication that is considered the top-most one in the \relsl. Other elementary
+predications may share the label or have arguments with labels of other elementary predications. We
+will discuss an example below when we discuss the perfective lexical rule.
+The label of the output \iboxb{2} is identified with the label of the input and with the
+label of the delimitative relation, hence \type{delimitative-rel} is treated as a modifier.  Further
+relations can be added at the beginning of the \textsc{rels} list to allow for the additional
+perfective meaning in A-\textit{le}-A and A-\textit{le}-\textit{yi}-A.  The combination with the
+perfective will be elaborated on in the following paragraphs.
+
+\eas
+\type{verbal-reduplication-lr} \impl\\
+%\scalebox{.9}{%
+    \avm{
+        [
+        phon & \1 $\oplus$ \etag $\oplus$ \1\\
+        synsem & [ loc\textbar cont [ ltop & \2 \\
+        ind  & \3 ] ]\\
+        rels & \etag $\oplus$ \4 $\oplus$ < [\type*{delimitative-rel}\\
+        lbl & \2\\
+        arg0 & \3 ] > \smallskip\\
+        lex-dtr & [phon \1\\
+        synsem\textbar loc & [cat  & [ head & verb ] \\
+        cont & [ ltop & \2\\
+        ind  & \3 ]]\\
+        rels \4 ] ]
+}
+%}
+\label{avm:redup}
+\zs
+
+To account for the variations in the phonology of the reduplication as well as 
+the combination with the phonology and semantics of the perfective aspect marker \textit{le}, 
+the type hierarchy of lexical rules in \figref{fig:typehi} is put forward. 
+\begin{figure}
+    \centering
+    \scalebox{.9}{\begin{forest}
+        type hierarchy
+        [,phantom
+        [,phantom
+        [verbal-reduplication-lr,name=verbal-reduplicaiton-lr
+        [non-perfective-reduplicaiton-lr
+        [a-a-lr]
+        [a-yi-a-lr]]
+        [,identify=!r211]]]
+        [aspect-marking-lr
+        [perfective-lr
+        [perfective-reduplicaiton-lr%,edge to=verbal-reduplicaiton-lr
+        [a-le-yi-a-lr]
+        [a-le-a-lr]]
+        [v-le-lr]]
+        [durative-lr]
+        [\ldots]]]
+    \end{forest}
+}
+    \caption{Type hierarchy for lexical rules of verbal reduplication and \textit{le}}
+    \label{fig:typehi}
+\end{figure}
+Apart from the type \type{perfective-reduplication-lr}, 
+which adds the inherited perfective relation, 
+there is a subtype \type{non-perfective-reduplication-lr}, 
+which does not add further relations. 
+Hence, what is \etag in the \textsc{rels} list in (\ref{avm:redup}) is the empty list in (\ref{avm:nonperf}):
+\ea\label{avm:nonperf}
+\type{non-perfective-verbal-reduplication-lr} \impl\\
+%\scalebox{.9}{%
+    \avm{
+        [
+        rels & \1 $\oplus$ < [ ] > \smallskip\\
+        lex-dtr & [ rels \1 ] ]
+    }
+%}
+\z
+The \textsc{rels} list of the output of the lexical rule is the \textsc{rels} list of
+the daughter \iboxb{1} plus a list with one element. 
+Since this element is specified in the supertype, it is not specified in (\ref{avm:nonperf}) again. 
+
+\type{non-perfective-verbal-reduplication-lr} has \type{aa-lr} and \type{a-yi-a-lr} as direct subtypes.
+(\ref{avm:AA}) and (\ref{avm:AyiA}) show \type{aa-lr} and \type{a-yi-a-lr}, respectively.
+As subtypes of \type{ver\-bal\hyp{}re\-dup\-li\-ca\-tion\hyp{}lr} illustrated in (\ref{avm:redup}), 
+both inherit the constraints on the \textsc{lex-dtr} and on the semantics of the output, 
+and because of (\ref{avm:nonperf}), no extra material is appended to the \textsc{rels} value of the input verb
+and the list containing the \type{delimitative-rel}.
+ In addition to the inherited constraints,
+\type{aa-lr} and \type{a-yi-a-lr} specify the phonology of the output differently.
+\type{aa-lr} determines that the \etag between the two phonological copies in (\ref{avm:redup}) is the empty list, 
+whereas \type{a-yi-a-lr} specifies this list of phonological material as \phonliste{ yi }:
+
+\ea\label{avm:constr-AA}
+Constraints on lexical rules of type \type{aa-lr} and \type{a-yi-a-lr}:
+%\begin{tabular}{@{}l@{\hspace{2cm}}l@{}}
+ \ea   \type{aa-lr} \impl \\%& 
+  %  \scalebox{.9}{%
+        \avm{
+            [phon & \1 $\oplus$ \1\\
+            lex-dtr & [phon & \1] ]
+    }
+%} %& 
+\ex	\type{a-yi-a-lr} \impl\\
+ %    \scalebox{.9}{%
+        \avm{
+            [phon & \1 $\oplus$ \phonliste{ yi } $\oplus$ \1\\
+            lex-dtr & [phon & \1] ]
+    }
+%}
+%\end{tabular}
+\z
+\z
+
+
+\noindent
+The lexical rules with all inherited constraints are given in (\ref{avm:AA}) and (\ref{avm:AyiA}):
+
+\ea\label{avm:AA}
+The AA lexical rule with all constraints inherited from the supertypes:\\
+%\scalebox{.9}{%
+    \avm{
+        [\type*{aa-lr}\\
+        phon & \1 $\oplus$ \1\\
+        synsem & [ loc\textbar cont [ ltop & \2 \\
+        ind  & \3 ] ]\\
+        rels & \4 $\oplus$ < [\type*{delimitative-rel}\\
+        lbl & \2\\
+        arg0 & \3 ] >\\
+        lex-dtr & [phon & \1\\
+        \punk{synsem\textbar loc}{[cat  & [ head & verb ]\\
+            cont & [ ltop & \2\\
+            ind  & \3 ]]}\\
+        rels & \4]
+        ]
+}
+%}
+\z
+
+%\newpage
+\ea\label{avm:AyiA}
+The A-\textit{yi}-A lexical rule with all constraints inherited from the supertypes:\\
+%\scalebox{.9}{%
+    \avm{
+        [\type*{a-yi-a-lr}\\
+        phon & \1  $\oplus$ \phonliste{ yi } $\oplus$ \1\\
+        synsem & [ loc\textbar cont [ ltop & \2 \\
+        ind  & \3 ] ]\\
+        rels &  \4 $\oplus$ < [\type*{delimitative-rel}\\
+        lbl & \2\\
+        arg0 & \3 ] >\\
+        lex-dtr & [phon & \1\\
+        \punk{synsem\textbar loc}{[cat  & [ head & verb ]\\
+            cont & [ ltop & \2\\
+            ind  & \3 ]]}\\
+        rels & \4]
+        ]
+}
+%}
+\z
+
+\type{v-le-lr} is a direct subtype of the \type{perfective-lr}.
+\type{perfective-reduplication-lr} inherits from both \type{verbal-reduplication-lr} and \type{per\-fec\-tive\hyp{}lr}
+and has two subtypes, \type{a-le-yi-a-lr} and \type{a-le-a-lr} itself.
+\type{verbal-reduplication-lr} is already presented in (\ref{avm:redup}). 
+We now turn to the constraints on \type{perfective-lr} and its subtypes.
+
+
+\citet[246]{MuellerLipenkova2013} propose the perfective lexical rule given in (\ref{avm:pfv-old}), 
+adapted to the formalization adopted in the current paper.
+It takes a verb as \textsc{lex-dtr}
+and appends \phonliste{ le } to its phonology.
+Further, it accounts for the change in semantics by appending the \textsc{rels} value of the input verb to a \type{perfective-rel}.
+
+\ea\label{avm:pfv-old}
+Perfective lexical rule adapted from \citet[246]{MuellerLipenkova2013}:\\
+%\scalebox{.9}{%
+    \avm{
+        [\type*{perfective-lr}\\
+        phon & \1 \+ \phonliste{ le }\\
+        \punk{synsem\textbar loc\textbar cont}{ [ ltop & \2\\
+            ind & \3 ]}\\ 
+        rels & <[\type*{perfective-rel}\\
+        lbl  & \2\\
+        arg0 & \3\\
+        arg1 & \4]> \,\+\, \5\smallskip\\
+        lex-dtr & [phon & \1\\
+        \punk{synsem\textbar loc}{[cat & [ head & verb]\\
+            cont & [ ltop & \4\\
+            ind & \3]]}\\
+        rels & \5]
+        ]
+}
+%}
+\z
+The event variables \iboxb{3} of the input and the output verb are shared. 
+The \textsc{ltop} of the output of the lexical rule \iboxb{2} is the label of the perfective relation, 
+and this relation scopes over the embedded verb. 
+The handle of the embedded verb \iboxb{4} is the argument of the \type{perfective-rel}. 
+
+The lexical rule suggested in (\ref{avm:pfv-old}) only explains simple perfective aspect marking with \textit{le}, 
+where \textit{le} immediately follows the verb.
+But it cannot account for the perfective aspect marking of a reduplicated verb,
+ as \textit{le} does not occur after the reduplication, 
+nor can \textit{le} be reduplicated together with the verb.
+It can only appear between the verb and the reduplicant.
+In order to accommodate \textit{le} marking for both simple and reduplicated verbs, 
+a general perfective lexical rule as in (\ref{avm:pfv-new}) and 
+a subtype \type{v-le-lr} as in (\ref{avm:vle}) are posited here.
+Besides adding a \type{perfective-rel} in the \textsc{rels} list of the output as in (\ref{avm:pfv-old}), 
+the \type{perfective-lr} in (\ref{avm:pfv-new}) allows an underspecified list to be appended at the end of the \textsc{rels} list.
+The \textsc{phon} value of the output makes it possible for further phonological material to occur both before and after \phonliste{ le }.
+
+\ea\label{avm:pfv-new}
+Type constraints on the type \type{perfective-lr} from which other subtypes inherit:\\
+%\scalebox{.9}{%
+    \avm{
+        [\type*{perfective-lr}\\
+        phon & \etag $\oplus$ \phonliste{ le } $\oplus$ \etag\\
+        \punk{synsem\textbar loc \textbar cont}{ [ltop & \2\\
+            ind  & \3]}\\ 
+        rels & <[\type*{perfective-rel}\\
+        lbl  & \2\\
+        arg0 & \3\\
+        arg1 & \4 ]> $\oplus$ \5 $\oplus$ \etag\smallskip\\
+        lex-dtr & [%phon & \1\\
+        \punk{synsem\textbar loc}{[cat & [ head & verb ]\\
+            cont & [ ltop & \4\\
+            ind  & \3]]}\\
+        rels & \5]
+        ]
+}
+%}
+\z
+
+\type{v-le-lr} with all inherited constraints as given in (\ref{avm:vle}) inherits from \type{perfective-lr} and specifies that the first element in the output \textsc{phon} list is identified with the \textsc{phon} value of the input verb
+and that nothing else comes after \phonliste{ le }.
+Furthermore, no other list can be appended at the end of the \textsc{rels} list of the output anymore.
+This corresponds to the proposal of \citet[246]{MuellerLipenkova2013} shown in (\ref{avm:pfv-old}), 
+which accounts for the simple perfective marking of verbs.
+
+%\newpage
+\ea\label{avm:vle}
+Structure of type \type{v-le-lr} with constraints inherited from \type{perfective-lr}:\\
+%\scalebox{.9}{%
+    \avm{
+        [\type*{v-le-lr}\\
+        phon & \1 $\oplus$ \phonliste{ le }\\
+        \punk{synsem\textbar loc \textbar cont\textbar ltop}{ \2}\\ 
+        rels & <[\type*{perfective-rel}\\
+        lbl  & \2\\
+        arg0 & \3\\
+        arg1 & \4]> $\oplus$ \5\smallskip\\
+        lex-dtr & [phon & \1\\
+        synsem\textbar loc \textbar cat  & [ head & verb\\
+        cont & [ltop & \4\\
+        ind & \3]]\\
+        rels & \5]]
+}
+%}
+\z
+
+\type{perfective-reduplication-lr} inherits from both \type{verbal-reduplication-lr} and \type{per\-fec\-tive\hyp{}lr}.
+The \textsc{phon} value of the output reduplicates the phonology of the input verb and states that there is \phonliste{ le } in between, 
+as well as potentially further phonological material.
+The \textsc{rels} list of the output appends the \type{delimitative-rel} to the \type{perfective-rel} and the \textsc{rels} value of the input verb.
+The arguments of both \type{perfective-rel} and \type{delimitative-rel} share the event index of the
+input verb \iboxb{3} to ensure that they apply to the same event denoted by the input verb. 
+The label of the \type{delimitative-rel} and the input verb are identified (\type{delimitative-rel} is a modifier) 
+and this shared label is embedded under the \type{perfective-rel}.
+
+\ea\label{avm:pfv-redup}
+Perfective and reduplication combined: type \type{perfective-reduplication-lr} with
+constraints inherited from \type{perfective-lr} and \type{verbal-redu\-pli\-ca\-tion-lr}:\\
+%\resizebox{\linewidth}{!}{
+ %   \scalebox{.9}{%
+        \avm{
+            [\type*{perfective-reduplication-lr}\\
+            phon & \1 $\oplus$ \phonliste{ le } $\oplus$ \etag $\oplus$ \1\\
+            \punk{synsem\textbar loc\textbar cont\textbar ltop}{ \2}\\ 
+            rels & <[\type*{perfective-rel}\\
+            lbl & \2\\
+            arg0 & \3\\
+            arg1 & \4]>
+            $\oplus$ \5 $\oplus$
+            <[\type*{delimitative-rel}\\
+            lbl  & \4\\
+            arg0 & \3]>\\
+            lex-dtr & [phon & \1\\
+            synsem\textbar loc & [cat  & [ head & verb ]\\
+            cont & [ ltop & \4\\
+            ind  & \3]]\\
+            rels & \5]
+            ]
+    }
+%}
+    %}
+\z
+For example %(\ref{ex-he-tasted-the-soup-a-little-bit}), repeated here as
+ (\ref{ex-he-tasted-the-soup-a-little-bit2}), we get the  MRS representation in (\ref{ex:mrs-soup}),
+where h1 and h2 correspond to the handles \ibox{2} and \ibox{4} and e1 to the event variable \ibox{3}:
+\ea\label{ex-he-tasted-the-soup-a-little-bit2}
+    \gll \objex{ta1} \obj{chang2}-\obj{le}-\obj{chang2} \objex{tang1}.\\
+    he taste-\textsc{pfv}-taste soup\\
+    \glt `He tasted the soup a little bit.'
+ \z
+\ea\label{ex:mrs-soup}
+h1 \sliste{ h1:perfective(e1,h2), h2:taste(e1,he,soup), h2:delimitative(e1) }
+\z
+So the delimitative relation is treated as an adjunct to the main relation of the verb, 
+and the perfective relation scopes over both the main relation and the delimitative relation.
+
+Two subtypes of \type{perfective-reduplication-lr} are posited:
+\type{a\hyp{}le\hyp{}yi\hyp{}a\hyp{}lr} %as in (\ref{avm:AleyiA}) 
+and \type{a-le-a-lr}, as shown in (\ref{avm:AleA}). %(\ref{avm:AleA}).
+They take over the semantic change to the input from \type{perfective\hyp{}reduplication\hyp{}lr}, but specify the \textsc{phon} value differently.
+Specifically, \type{a\hyp{}le\hyp{}yi\hyp{}a\hyp{}lr} specifies the middle phonological material as
+\phonliste{ le, yi }, while \type{a-le-a} specifies it as \phonliste{ le } only.\footnote{
+A reviewer wants to know what prevents phonological material other than \obj{yi} and \obj{le} to appear in between the reduplicated elements.
+The possible historical and phonological reasons are discussed in Appendix~\ref{app:hist}.
+In this analysis, the subtypes of \type{verbal-reduplication-lr} (\ref{avm:AyiA}, \ref{avm:AleA}) prevent phonological materials other than \phonliste{ le } and \phonliste{ yi } from appearing in between the reduplication by specifying what can appear in the \etag list and what not.
+}
+
+
+\ea\label{avm:AleA}
+%\begin{tabular}{@{}l@{\hspace{2cm}}l@{}}
+\ea    %\scalebox{.9}{%
+        \type{a-le-yi-a-lr} \impl\\
+        \avm{
+            [%\type*{a-le-yi-a-lr}\\
+            phon & \1 \+ \phonliste{ le, yi } \+ \1\\
+            lex-dtr & [phon & \1
+            ]
+            ]
+    }
+%}%&
+\ex   % \scalebox{.9}{%
+\label{avm:a-le-a-lr}
+    \type{a-le-a-lr} \impl\\
+        \avm{
+            [%\type*{a-le-a-lr}\\
+            phon & \1 \+ \phonliste{ le } \+ \1\\
+            lex-dtr & [phon & \1
+            ]
+            ]
+    }
+%}
+%\end{tabular}
+\z
+\z
+
+The analysis of (\ref{ex-he-tasted-the-soup-a-little-bit2}) is shown in tree format in
+Figure~\ref{fig-he-tasted-the-soup-a-little-bit}. The \textsc{lex-dtr} is the daughter in the tree.
+\begin{figure}[htb]
+\centering
+\begin{forest}
+[        \avm{
+            [\type*{a-le-a-lr}\\
+            phon & \1 $\oplus$ \phonliste{ le } $\oplus$ \1\\
+            synsem\textbar loc & [ cat  & [ head  & verb\\
+                                            spr   & < NP$_{\6}$ >\\
+                                            comps & < NP$_{\7}$ > ]\\
+                                   cont & [ ltop & \2\\
+                                            ind  & \ibox{3} ]] \\
+            rels & <[\type*{perfective-rel}\\
+            lbl & \2\\
+            arg0 & \3\\
+            arg1 & \4]> $\oplus$ \5 $\oplus$
+            <[\type*{delimitative-rel}\\
+            lbl  & \4\\
+            arg0 & \3]> ]
+    }
+[\avm{ [phon & \1 \phonliste{ chang2 }\\
+       synsem\textbar loc & [cat  & [ head  & verb\\
+                                      spr   & < NP$_{\6}$ >\\
+                                      comps & < NP$_{\7}$ > ]\\
+                             cont & [ ltop & \4\\
+                                      ind  & \3]]\\
+        rels & \5 < [\type{taste}\\
+                     lbl  & \4\\
+                     arg0 & \3\\
+                     arg1 & \6\\
+                     arg2 & \7 ] > ]
+}]]
+\end{forest}
+
+\caption{Analysis of \obj{chang2-le-chang2} taste-\textsc{pfv}-taste `taste the soup a little bit'}\label{fig-he-tasted-the-soup-a-little-bit}
+\end{figure}
+
+The figure shows how the lexical item for \obj{chang2} `to taste' is inserted as a daughter into
+the \type{a-le-a-lr} lexical rule. The arguments of \obj{chang2} `to taste' are represented within the \spr and
+the \compsl (see \citealt{GSag2000a-u} for English) and the respective argument NPs are linked to the
+arguments of \type{taste}: the subject is \textsc{arg1}, the agent, and the object is \textsc{arg2},
+the stimulus. See \citet{DKW2024a} for more on linking. The part of speech of the lexical item
+(\type{verb}) and the valence information is carried over from the daughter to the mother
+unchanged. The semantic contribution of the daughter verb, the value of \ibox{5}, is inserted into
+the \relsl of the mother as it was specified in the constraints on the type
+\type{perfective-reduplication-lr} in (\ref{avm:pfv-redup}). The \textsc{phon} value of the mother
+is the concatentation of \obj{chang2}, \obj{le} and \obj{chang2}, as specified in the constraint
+on \type{a-le-a-lr} in (\ref{avm:a-le-a-lr}). The resulting unit \obj{chang2-le-chang2} then
+combines with its object forming a VP. This VP is combined with the subject resulting in a complete
+verbal projection, a sentence. \obj{chang2-le-chang2} behaves in the same way as the simple \obj{chang2}.
+
+Since the above-described lexical rules do not constrain the number of syllables of the input verb, but simply reduplicate its phonology  as a whole,
+they can also account for the ABAB and the AB-\textit{le}-AB forms of reduplication,
+as long as the input verb is disyllabic.
+Notice that  the lexical rules above also produce AB-\textit{yi}-AB and AB\hyp{}\textit{le}\hyp{}\textit{yi}\hyp{}AB for disyllabic input verbs.
+Although these forms are considered unacceptable by some authors \citetext{\citealp[30]{LiThompson1981}; \citealp[275--276]{Hong1999};  \citealp[160]{BascianoMelloni2017}; \citealp[239]{YangWei2017}}, 
+\citet[269]{Fan1964} and \citet[143]{Sui2018} consider AB-\textit{yi}-AB and AB-\textit{le}-\textit{yi}-AB to be possible, even though they both recognize that these two forms are rare.
+Indeed, a few examples of AB\hyp{}\emph{yi}\hyp{}AB and AB\hyp{}\emph{le}\hyp{}\emph{yi}\hyp{}AB in Early Mandarin %(12th to 20th centuries)
+ (\ref{ex:AByiAB-lu}--\subref{ex:AByiAB-pu}) and Modern Mandarin (\ref{ex:AByiAB-rou1}--\subref{ex:ABleyiAB-ccl}) were found.
+
+\settowidth\jamwidth{(CCL)}
+
+\begin{sloppypar}
+\ea\label{ex:ABleyiAB}
+\ea\label{ex:AByiAB-lu}
+\gll \objex{ni3} \objex{yu3} \objex{wo3} \obj{zheng3li3-yi-zheng3li3}.\footnotemark\\
+you let me arrange-one-arrange\\
+\glt `Let me arrange it a little bit!'
+\footnotetext{\obj{Yuan2qu3} \obj{xuan3}: \obj{Lu3zhai1lang2} \textit{[Selected Yuanqu: Luzhailang]}, as cited in \citet[15]{Zhang2000}}
+
+\ex\label{ex:AByiAB-pu}
+\gll \objex{ni3} \obj{da3ting1-yi-da3ting1}.\footnotemark\\
+you inquire-one-inquire\\
+\glt `Inquire about it a little bit!'
+\footnotetext{\obj{Yuan2} \obj{Ming2} \obj{juan4}: \obj{Piao2tong1shi4} \textit{[Yuan and Ming volume: Piaotongshi]}, 308, as cited in \citet[15]{Zhang2000}}
+
+\ex\label{ex:AByiAB-rou1}
+\gll \objex{ge4} \objex{ge4} \objex{dian3-tou2} \obj{wei1xiao4-yi-wei1xiao4}.\footnotemark\\
+\textsc{clf} \textsc{clf} nod-head smile-one-smile\\
+\glt `Each one nodded his head and smiled a little bit.'
+\footnotetext{\objex{Rou2}, \objex{Shi2}. 1975. \obj{Rou2} \obj{Shi2} \obj{xiao3shuo1} \obj{xuan3ji2} \textit{[Selected novels of Roushi]}, 31. Beijing: People's Literature Publishing House.}
+
+\ex\label{ex:AByiAB-rou2}
+\gll \objex{ta1} \obj{wei1xiao4-le-yi-wei1xiao4}, you \obj{ming2xiang3}-\obj{le-yi}-\obj{ming2xiang3}.\footnotemark\\
+he smile-\textsc{pfv}-one-smile and meditate-\textsc{pfv}-one-meditate\\
+\glt `He smiled a little bit and meditated a little bit.'
+\footnotetext{\objex{Rou2}, \objex{Shi2}. 1975. \obj{Rou2} \obj{Shi2} \obj{xiao3shuo1} \obj{xuan3ji2} \textit{[Selected novels of Roushi]}, 31. Beijing: People's Literature Publishing House.}
+
+\ex\label{ex:AByiAB-li}
+\gll \objex{fei1chang2} \objex{yan2su4} de \objex{ba3} \objex{jin4shi4} \objex{yan3jing4} \obj{duan1zheng4-le-yi-duan1zheng4}.\footnotemark\\
+very seriously \textsc{de} \textsc{ba} nearsighted glasses straighten-\textsc{pfv}-one-straighten\\
+\glt `[He] very seriously straightened the nearsighted glasses quickly.'
+\footnotetext{\objex{Li3}, \objex{Jie2ren2}. 1962. \obj{Da4} \obj{bo1} \textit{[Great wave]}, 3rd band, 171. Beijing: The Writers Publishing House.}
+
+\ex\label{ex:ABleyiAB-ccl}
+\gll \objex{ji3duo1} \objex{san3luan4}-zhe de \objex{chuan2} \objex{li3} de \objex{deng1guang1}, \objex{ye3} \objex{hu1yin1hu1mie4} de \obj{bian4huan4-le-yi-bian4huan4} \objex{wei4zhi}.\\
+many scattered-\textsc{dur} \textsc{de} boat in \textsc{de} light also flicker \textsc{de} change-\textsc{pfv}-one-chang position\\ \jambox{(CCL)}
+\glt `Many scattered lights in the boats also changed their positions a little bit, flickering.'
+\z
+\z
+\end{sloppypar}
+
+This suggests that  even though AB-\textit{yi}-AB and AB-\textit{le}-\textit{yi}-AB might be degraded, they are not ungrammatical \textit{per se}.
+The reason for this degradedness is probably phonological, since AB-\textit{yi}-AB and AB-\textit{le}-\textit{yi}-AB contain too many syllables \citetext{\citealp[274]{Fan1964}; \citealp[15]{Zhang2000}; \citealp[239]{YangWei2017}; \citealp[143]{Sui2018}}, but we argue that it is not an issue of grammaticality.
+Thus, they can still be produced via the lexical rules posited above, but are ruled out or degraded due to a general phonological constraint.\footnote{
+One reviewer suggests that given that AB-\textit{yi}-AB and AB-\textit{le}-\textit{yi}-AB were possible in previous stages of the language (see \citealt[15]{Zhang2000}, \citealt[160--161]{BascianoMelloni2017}),
+these rare occurrences can be seen as relics of this usage.
+}
+
+
+AAB, A-\textit{yi}-AB, A-\textit{le}-AB, AA-\obj{kan4} and A-\obj{kan4}-\obj{kan4} can also be accounted for by the lexical rules proposed in this section.
+They can be analyzed as compounds consisting of a reduplicated monosyllabic verb and another element.
+Specifically, AAB, A-\textit{yi}-AB and A-\textit{le}-AB can be considered as the compound of a reduplicated monosyllabic verb (A) and a noun (B).\footnote{
+    \citet[64--65]{Huang1984} and \citeauthor{Her1996} (\citeyear[Sec.\,2]{Her1996}; \citeyear[Sec.\,3.1]{Her2010}) argue that some of these V-O combinations are compounds, some are phrases, and some have dual status (both compounds and phrases).
+    Following this approach, AAB, A-\textit{yi}-AB and A-\textit{le}-AB can (also) be considered as the phrasal combination of a reduplicated verb and its object.
+}
+AA-\obj{kan4} can be regarded as the compound of a reduplicated monosyllabic verb (A) and the verb \obj{kan4} `look',
+whereas A-\obj{kan4}-\obj{kan4} is the compound of a monosyllabic verb (A) and the reduplication of \obj{kan4} `look'.
+A-\obj{yi}-A-\obj{kan4} is also possible, though rare, presumably also due to its length.
+An inquiry in CCL found 55 hits of A-\obj{yi}-A-\obj{kan4}.
+A sample is listed in (\ref{ex:AyiAkan}).
+
+\begin{sloppypar}
+\ea\label{ex:AyiAkan}
+\ea
+\gll \objex{te4yi4} \objex{gong1neng2} de \objex{yan2jiu1zhe3}-men \objex{bu4fang2} \objex{ru2ci3} \obj{shi4-yi-shi4-kan4} \ldots\\
+special power \textsc{de} researcher-\textsc{pl} may.as.well such try-one-try-look\\ \jambox{(CCL)}
+\glt `Researchers of special power may as well have a try as such and see \ldots'
+
+\ex 
+\gll \objex{dan4shi4} \objex{dui4} \objex{fa1} \objex{mei2} \objex{fa1}-\objex{guo} \objex{he2ge2-zheng4}, \objex{yi3jing1} \objex{shuo1} \objex{bu4} \objex{qing1} le, \objex{xu1yao4} \obj{cha2-yi-cha2-kan4}.\\
+but about issue not issue-\textsc{exp} conformity-certificate already say not clealy \textsc{ptc} need check-one-chek-look\\ \jambox{(CCL)}
+\glt `But one already cannot say it clearly anymore, whether a certificate of conformity is issued or not. One needs to have a check and see.'
+
+\ex
+\gll \objex{rang4} \objex{wo3} \objex{lai2} \obj{cai1-yi-cai1-kan4}.\\
+let I come guess-one-guess-look\\ \jambox{({CCL})}
+\glt `Let me have a guess.'
+
+\ex
+\gll \objex{da4-lao3ban3}-men \objex{yao4} \obj{deng3-yi-deng3-kan4}\\
+big-boss-\textsc{pl} need wait-one-wait-look\\ \jambox{(CCL)}
+\glt `Big bosses need to wait a little bit and see.'
+
+\ex
+\gll \objex{fu1ren2} \objex{ni3} \objex{dao4} \obj{shu3-yi-shu3-kan4}, \objex{zhe4} \objex{zhu1} \objex{hua1} de \objex{hua1duo3} \objex{gong4} \objex{you3} \objex{ji3} \objex{zhong3} \objex{yan2se4}.\\
+madam you just count-one-count-look this \textsc{clf} flower \textsc{de} blossom in.total have how.many \textsc{clf} color\\ \jambox{(CCL)}
+\glt `Madam, just try to count and see how many colors the blossom of this flower has in total.'
+\z
+\z
+Due to the prominent tentative, trying meaning of AA-\obj{kan4} and A-\obj{kan4}-\obj{kan4}, they are not compatible with the perfective aspect marker \obj{le} semantically,
+as one usually cannot try something that is already realized.
+Thus, structures such as  A\hyp{}\obj{le}\hyp{}A\hyp{}\obj{kan4} and A\hyp{}\obj{kan4\hyp{}le\hyp{}kan4} are considered pragmatically infelicitous.
+\end{sloppypar}
+
+The current analysis provides a unified account for all forms of delimitative verbal reduplication in Mandarin Chinese.
+Like in \citet{FanSongBond2015}, \textit{yi} is handled as a phonological element which does not make any contribution to the semantics,
+and an inheritance hierarchy is used to capture the commonalities among different forms of reduplication.
+But the present proposal also reflects the connection between the reduplication and aspect marking via multiple inheritance.
+This account makes use of a semantic mechanism, which correctly rules out aspect marking with forms other than \textit{le}.
+By providing a semantic explanation, this mechanism seems less \textit{ad hoc} than the one used in \citet{FanSongBond2015}, which simply assumed that the reduplication cannot combine with aspect information.
+The present approach also has a broader coverage of the forms of verbal reduplication than the one in \citet{FanSongBond2015}.
+Furthermore, all the forms are derivable from the lexical rules proposed here, so that there is no need to resort to irregular lexicon entries, and the productivity of these forms is correctly captured.
+In sum, the analysis proposed in this paper possesses greater explanatory power and resolves the
+problems of previous studies.
+
+
+\section{Conclusions}\label{sec:conclu}
+
+The current study provides a new HPSG account for delimitative verbal reduplication in Mandarin Chinese.
+We present empirical evidence that reduplication is possible with all verb classes.
+We give a semantic explanation for the incompatibility of reduplication with aspect markers other than \obj{le}.
+We argue that reduplication is better analyzed as a morphological rather than a syntactic process.
+We model reduplication as a lexical rule,
+and the different forms of reduplication are captured in an inheritance hierarchy using underspecified lists.
+The interaction between verbal reduplication and aspect marking is handled by multiple inheritance.
+This analysis is compatible with both mono- and disyllabic verbs, 
+so that all productive forms of reduplication are derivable by lexical rules.
+The analysis is implemented as part of a computer-processable grammar of Mandarin Chinese.
+The analysis is implemented as part of the CoreGram project \citep{MuellerCoreGram} in a Chinese
+grammar \citep{MuellerLipenkova2013} in the TRALE system \citep{MeurersEtAl2002, Penn2004}.
+
+\section{Acknowledgements}
+
+We are really grateful for the comments of several reviewers of the Journal of Linguistics and of
+the HPSG 2021 conference. We also thank Elizabeth Pankratz for comments on an earlier version of
+this paper. This work was supported by a grant of the DFG to the project SFB 1412 A04.
+
+\appendix
+
+\section{Analysis based on the aspectual system by \citet{Tsai2008}}\label{app:tsai}
+
+\citet[229]{YangWei2017} claim that reduplication can be analyzed as an aspect marker 
+following the structure of Mandarin Chinese aspects proposed by \citet{Tsai2008}.
+ \citet{Tsai2008} provides the syntactic analysis for aspect markers in Mandarin Chinese as shown in \figref{tree:tsai}.\footnote{Asp = Aspect}
+He observes the so-called incompleteness effect, namely that a minimal sentence, 
+which only contains a verb marked by \obj{zhe} `\textsc{dur}',
+\obj{le} `\textsc{pfv}' or \obj{wan2} `\textsc{compl}' 
+and its arguments, 
+seems incomplete without further sentential elements 
+such as the sentence final particle \obj{le} 
+or a temporal adverbial like \obj{gang1cai2} `just now' (\ref{ex:incomplete}). 
+In contrast, a minimal sentence with a verb marked by  \obj{zai4} `\textsc{prog}' or \obj{guo}
+`\textsc{exp}'  and its arguments can stand alone (\ref{ex:complete}).
+
+\ea\label{ex:incomplete}
+\gll \objex{Xiao3li3} \objex{chi1}-zhe/le/\objex{wan2} \objex{fan4} *(le).\\
+Xiaoli eat-\textsc{dur}/\textsc{pfv}/\textsc{compl} meal \textsc{ptc}\\
+\glt `Xiaoli is eating/ate/finished eating the meal.'
+\z
+
+\ea\label{ex:complete}
+\gll \objex{Xiao3li3} (\objex{gang1cai2}) \objex{zai4} \objex{ku1}/\objex{ku1}-\objex{guo}.\\
+Xiaoli just.now \textsc{prog} cry/cry-\textsc{exp}\\
+\glt `Xiaoli was crying/cried just now.'
+\z
+He thus proposes three aspect positions under TP. \obj{zai4} `\textsc{prog}' and \obj{guo} `\textsc{exp}' reside under Asp$_1$, 
+while \obj{zhe} `\textsc{dur}' and \obj{le} `\textsc{pfv}' under Asp$_2$, as illustrated in \figref{tree:tsai}.\footnote{
+    \citet{Tsai2008} differentiated the middle and the inner aspect based on the fact that 
+    \obj{wan2} can only occur with certain types of predicate.
+    This differentiation does not play a role for our purpose and will not be further discussed here.}
+
+\begin{figure}
+    \centering
+    \begin{forest}
+        [TP [T]
+        [...
+        [AspP$_1$ (outer aspect) [Asp$_1$\\\obj{zai4/guo}]
+        [\textit{v}P [\textit{v}]
+        [AspP$_2$ (middle aspect) [Asp$_2$\\\obj{zhe/le}]
+        [VP [V-Asp$_3$ (inner aspect)\\\obj{wan2}]
+        ]
+        ]
+        ]
+        ]
+        ]
+        ]
+    \end{forest}
+    \caption{Structure of the aspectual system in Mandarin Chinese according to \citet[683]{Tsai2008}}
+    \label{tree:tsai}
+\end{figure}
+
+Turning to reduplication, a minimal sentence with reduplication also seems incomplete (\ref{ex:redup-tsai}).
+Based on this, the reduplicant should reside under Asp$_2$, as illustrated in \figref{tree:redupasp}.
+
+\ea\label{ex:redup-tsai}
+\ea[*] {\gll \objex{ta1} \obj{xiao4}-\obj{xiao}\\
+    he laugh-laugh\\}
+\ex[] {\gll \objex{ta1} \obj{xiao4}-\obj{le}-\obj{xiao4}\\
+    he laugh-\textsc{pfv}-laugh\\
+    \glt `He laughed a little.'}
+\ex[] {\gll \objex{ta1} \obj{xiao4}-\obj{xiao}, \objex{bu4} \objex{shuo1hua4}\\
+    he laugh-laugh not speak\\
+    \glt `He laughed a little, and didn't speak.'}\label{ex:redup-tsai-co}
+\z
+\z
+
+\begin{figure}
+    \centering
+    \begin{forest}
+        [TP [T]
+        [...
+        [AspP$_1$ (outer aspect) [Asp$_1$\\\obj{zai4/guo}]
+        [\textit{v}P [\textit{v}]
+        [AspP$_2$ (middle aspect) [Asp$_2$\\\obj{zhe}/\obj{le}/reduplication]
+        [VP [V-Asp$_3$ (inner aspect)\\\obj{wan2}]
+        ]
+        ]
+        ]
+        ]
+        ]
+        ]
+    \end{forest}
+    \caption{Position of reduplication according to the aspectual system in \citet{Tsai2008}}
+    \label{tree:redupasp}
+\end{figure}
+
+This analysis would result in a mismatch between syntax and semantics, 
+in the sense that the aspect markers that belong to the same semantic group do not occur in the same syntactic position. 
+Even though \obj{le} `\textsc{pfv}', \obj{guo} `\textsc{exp}' and reduplication all mark perfective aspects (\sectref{sec:aspM}, \citealt{Dai1997, XiaoMcEnery2004}),
+\obj{guo} `\textsc{exp}' is situated under Asp$_1$, while \obj{le} `\textsc{pfv}' and reduplication are under Asp$_2$.
+Similarly, \obj{zai4} `\textsc{prog}' and \obj{zhe} `\textsc{dur}' are both imperfective aspects but also occur in different syntactic positions.
+
+\section{\obj{yi} and \obj{le}}\label{app:hist}
+
+A reviewer suggests that the fact that only  \obj{yi} and \obj{le}  can appear in between reduplication 
+seems somewhat arbitrary, and it is not evident why certain elements are permissible while others are not.
+We think that there might be historical and phonological reasons.
+
+\obj{le} `\textsc{pfv}' marks the perfective aspect.
+The reason for \obj{le} `\textsc{pfv}' being the only aspect marker compatible with reduplication is explained in Section~\ref{sec:aspM}.
+
+As for \obj{yi} `one', its use stems from the historical development of delimitative verbal reduplication but is synchronically opac.
+\citet[13--15]{Zhang2000} shows that delimitative verbal reduplication originates from the ``V + numeral + verbal classifier'' phrase,
+where the verbal classifier is borrowed from a verb of the same form, as shown in (\ref{ex:hist1}) from \obj{Song4dai4} \obj{juan4}: \obj{Xu1tang2} \obj{He2shang} \obj{yu3lu4} \textit{[The Song dynasty volume: Quotations from Abbot Xutang]} p. 387 as cited in \citet[12]{Zhang2000}.
+\ea\label{ex:hist1}
+%明又喝,岐亦喝,明连喝两喝,岐便礼拜。(《宋代卷·虚堂和尚语录》3 87 页) as cited in \citet[12]{Zhang2000}
+\gll \objex{ming2} \objex{you4} \objex{he4}, \objex{qi2} \objex{yi4} \objex{he4}, \objex{ming2} \objex{lian2} \objex{he4} \objex{liang3} \objex{he4}, \objex{qi2} \objex{bian4} \objex{li3bai4}\\
+Ming again yell Qi also yell Ming in.succession yell two yell Qi thus bow\\
+\glt `Ming yelled again. Qi yelled too. Ming yelled twice. Qi thus bowed.'
+\z
+Here the numeral refers to the actual number of the action taking place
+and can be any number.
+This evolved into the structure of V-\obj{yi}-V (or A-\obj{yi}-A), which does not express the actual number of the action anymore,
+but simply conveys that the action happens in a short period of time or for only few times. 
+Consider (\ref{ex:hist2}) from \obj{Song4dai4} \obj{juan4}: \obj{Zhang1} \obj{Xie2} \obj{zhuang4yuan2} \textit{[The Song dynasty volume: Top graduate Zhang Xie]} p. 519 as cited in \citet[13]{Zhang2000}.
+\ea\label{ex:hist2}
+%且歇一歇了,去坐地。(《宋代卷·张协状元》5 19 页) as cited in \citet[13]{Zhang2000}
+\gll \objex{qie3} \obj{xie1-yi-xie1} \objex{le}, \objex{qu4} \objex{zuo4} \objex{di4}.\\
+just rest-one-rest \textsc{ptc} go sit ground\\
+\glt `(Let me) just take a rest and go sit on the ground.'
+\z
+In this case, \obj{yi1} `one' cannot be replaced by other numerals.
+Since V-\obj{yi}-V does not express the actual number of the action anymore,
+it became possible to delete the \obj{yi1} `one',
+hence the use of the VV (or AA) form, too.
+
+Synchronically, A-\obj{yi}-A has the same meaning as AA and both do not refer to the actual number of the event denoted by the verb.
+This means that \obj{yi1} `one' in A-\obj{yi}-A does not contribute any specific meaning to the structure
+and is only there as a historical remnant.
+In this sense,  \obj{yi1} `one' appearing in between the reduplication is synchronically arbitrary. %similar to linking elements in compounds
+
+Besides the obvious conceptual reason that  \obj{yi1} `one' is taken to mean `little/few',
+there might be a phonological explanation for  \obj{yi1} `one' rather than other numerals is used in the A-\obj{yi}-A structure.
+In Mandarin Chinese, one form of intensifying reduplication is A-\obj{li}-AB e.g. \obj{hu2-li-hu2tu2} `confused-li-confused',
+where the \obj{li} is fixed and also does not bear any meaning.
+\citet[137]{Sui2018} assumes that this syllable is filled with \obj{li} because the open syllable \obj{li} is a relatively unmarked phonological constituent \citep{Yip1992}
+and the second syllable in A-\obj{li}-AB occupies an unstressed position.
+We can see the similarities between \obj{li} in A-\obj{li}-AB and \obj{yi} in A-\obj{yi}-A: they are both relatively unmarked and occupies an unstressed position.
+This can also make it easier for  \obj{yi1} `one' rather than other numerals to become part of a fixed structure.
+But a phonological account is out of the scope of this paper and has to be left for further research.
+
+%The subtypes of \type{verbal-reduplication-lr} (\ref{avm:AyiA}, \ref{avm:AleA}) prevent phonological materials other than \phonliste{ le } and \phonliste{ yi } from appearing in between the reduplication by specifying what can appear in the \etag list and what not.
 
 
 

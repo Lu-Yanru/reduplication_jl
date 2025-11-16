@@ -1,9 +1,24 @@
-\documentclass[%
-%anonym,
-% times,
- %referee,
- %doublespacing,
- ]{lin}
+% \documentclass[%
+% %anonym,
+% % times,
+%  %referee,
+%  %doublespacing,
+%  ]{lin}
+\documentclass[a4paper]{CUP-JNL-LIN}%[ruler,draftrules]
+
+\articletype{RESEARCH ARTICLE}
+\jname{Journal of Linguistics}
+\jyear{2027}
+\jvol{0}
+%\jissue{1}
+\jdoi{10.1017/\ldots}
+
+
+
+\copyrightline{\textcopyright\ The Author(s) 2025. This is an Open Access article,
+distributed under the terms of the Creative Commons Attribution licence (http://creativecommons.org/licenses/by/4.0/),
+which permits unrestricted re-use, distribution, and reproduction in any medium, provided the original work is properly cited.}
+
 
 \input{localpackages}
 \input{localcommands}
@@ -16,15 +31,22 @@
 \begin{document}
 
 
-
-%\leftrunning{Yanru Lu \& Stefan Müller}  % Short author list
-
-\rightrunning{Deliminative verbal reduplication in Mandarin Chinese} % Short title
-
-
-
+\begin{Frontmatter}
 \title{Deliminative verbal reduplication in Mandarin Chinese}
 
+\author[1]{Yanru Lu\corresp{\email{yanru.lu@hu-berlin.de}}}%\orcid{0000-0002-5915-7315}
+\author[1]{Stefan Müller\corresp{\email{st.mueller@hu-berlin.de}}}%\orcid{0000-0003-4413-5313}
+
+\authormark{Yanru Lu \& Stefan Müller}
+
+
+\address[1]{\orgname{Humboldt-Universität zu Berlin, Institute for German language and linguistics},
+  \orgaddress{\street{Unter den Linden 6}, \postcode{D-10099 Berlin}, \country{Germany}}}
+
+
+\received{08 July 2023}
+\revised{01 August 2025}
+\accepted{14 November 2025}
 
 
 % \author[1]{\givenname{Yanru} \surname{Lu}}
@@ -51,33 +73,31 @@
 
 
 
-\maketitle
 
-
-
-\begin{abstract}
+\abstract{
 The current study presents an HPSG analysis for deliminative verbal reduplication in Mandarin Chinese. We provide a detailed description of the phenomenon. After discussing reduplication's interaction with verb classes and aspect markers, we argue that it is better analyzed as a morphological rather than a syntactic process. We put forward a lexical rule for verbal reduplication in Mandarin Chinese, and the different forms of reduplication are captured in an inheritance hierarchy. The interaction between verbal reduplication and aspect marking is handled by multiple inheritance. This analysis covers all forms of deliminative verbal reduplication in Mandarin Chinese and has none of the shortcomings of previous analyses.
+}
 \keywords{verbal reduplication, Mandarin Chinese, HPSG, Minimal Recursion Semantics}
-\end{abstract}
+
+\end{Frontmatter}
 
 
+% \input{chapters/ch01-Intro} 
 
-\input{chapters/ch01-Intro} 
+% \input{chapters/ch02-Phenomenon}
 
-\input{chapters/ch02-Phenomenon}
+% %\input{chapters/ch03-Theory}
 
-%\input{chapters/ch03-Theory}
+% \input{chapters/ch04-Previous}
 
-\input{chapters/ch04-Previous}
+% \input{chapters/ch05-Analysis}
 
-\input{chapters/ch05-Analysis}
+% \input{chapters/ch06-Conclusion}
 
-\input{chapters/ch06-Conclusion}
+% \appendix
+% \input{chapters/appendix}
 
-\appendix
-\input{chapters/appendix}
-
-
+\input{reduplication-include}
 
 \renewrobustcmd{\disambiguate}[3]{#1}
 \bibliographystyle{lin}
