@@ -1,5 +1,6 @@
 
 
+%%% a generic sublist-styler
 \def\@xlist#1[#2]{\ifnum \@xnumdepth >3 \@toodeep\else%
     \advance\@xnumdepth \@ne%
     \edef\@xnumctr{xnum\romannumeral\the\@xnumdepth}%
@@ -8,6 +9,7 @@
       \expandafter\let\csname @xs\romannumeral\the\@xnumdepth\endcsname#1\fi
     \begin{list}{(\csname the\@xnumctr\endcsname)}%
                 {\usecounter{\@xnumctr}\@subex{#2}{1.5ex}}\fi}
+
 
 %%% a generic sublist-styler
 % \def\@xlist#1[#2]{\ifnum \@xnumdepth >3 \@toodeep\else%

@@ -1,0 +1,79 @@
+%% -*- coding:utf-8 -*-
+% \documentclass[%
+% %anonym,
+% % times,
+%  %referee,
+%  %doublespacing,
+%  ]{lin}
+
+% The new styles break the alignment of \glt from gb4e if jambox is used.
+%\documentclass[a4paper]{article}%[ruler,draftrules]
+\documentclass[a4paper]{scrartcl}
+
+%\copyrightline{\textcopyright\ The Author(s) 2025. This is an Open Access article,
+%distributed under the terms of the Creative Commons Attribution licence (http://creativecommons.org/licenses/by/4.0/),
+%which permits unrestricted re-use, distribution, and reproduction in any medium, provided the original work is properly cited.}
+
+
+\RequirePackage{amsmath} % loaded by JL
+
+\input{localpackages}
+\input{localcommands}
+\input{localhyphenation}
+
+%\newtoggle{draft}\togglefalse{draft}
+\newtoggle{draft}\toggletrue{draft}
+
+
+\begin{document}
+
+
+\title{{\large\normalfont To appear: Journal of Linguistics, 2027, vol.\ 63}\\~\\
+Deliminative verbal reduplication in Mandarin Chinese}
+
+\author{Yanru Lu \& Stefan Müller\\Humboldt-Universität zu Berlin}
+
+
+
+\maketitle
+
+\abstract{
+The current study presents an HPSG analysis for deliminative verbal reduplication in Mandarin Chinese. We provide a detailed description of the phenomenon. After discussing reduplication's interaction with verb classes and aspect markers, we argue that it is better analyzed as a morphological rather than a syntactic process. We put forward a lexical rule for verbal reduplication in Mandarin Chinese, and the different forms of reduplication are captured in an inheritance hierarchy. The interaction between verbal reduplication and aspect marking is handled by multiple inheritance. This analysis covers all forms of deliminative verbal reduplication in Mandarin Chinese and has none of the shortcomings of previous analyses.
+}
+%\keywords{verbal reduplication, Mandarin Chinese, HPSG, Minimal Recursion Semantics}
+
+
+
+
+% \input{chapters/ch01-Intro} 
+
+% \input{chapters/ch02-Phenomenon}
+
+% %\input{chapters/ch03-Theory}
+
+% \input{chapters/ch04-Previous}
+
+% \input{chapters/ch05-Analysis}
+
+% \input{chapters/ch06-Conclusion}
+
+% \appendix
+% \input{chapters/appendix}
+
+\input{reduplication-include}
+
+\renewrobustcmd{\disambiguate}[3]{#1}
+\bibliographystyle{lin}
+
+\bibliography{Bib.bib}
+
+
+
+\end{document}
+
+19866 Words mit anhang
+18850 ohne Anhang
+
+18761 ohne Anhang mit reduzierter Bib
+
+15172 ohne Anhang und Strichen von AVMs
