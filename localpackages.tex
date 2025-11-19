@@ -63,19 +63,6 @@ hidelinks, %For links without colored borders
 \usepackage{refcount}
 \usepackage{xstring}
 
-\usepackage{gb4e}
-\usepackage{paradox-gb4e-bracket-patch}
-\exewidth{(222)}
-\judgewidth{**}
-\usepackage{cgloss}
-
-\def\eal{\begin{exe}\ex\begin{xlist}[iv.]\raggedright}
-\def\zl{\end{xlist}\end{exe}}
-
-\usepackage{jambox}
-
-
-
 
 \usepackage{xspace}
 
@@ -88,4 +75,93 @@ hidelinks, %For links without colored borders
 \usepackage{xcolor}
 
 %% If you want to use natbib, uncomment the following:
-\usepackage{natbib}
+%%\usepackage{natbib}
+
+
+\usepackage[
+	natbib=true,
+	style=langsci-unified,
+        citestyle=langsci-unified,
+        datamodel=langsci,
+	%refsection=chapter,
+	maxbibnames=2, %3 is default %99,
+	uniquename=false,
+	mincrossrefs=2, % 99
+%	maxcitenames=2,
+	isbn=false,
+	autolang=hyphen,
+	language=english,
+	backend=biber,
+	indexing=cite,
+        doi=false,
+]{biblatex}
+
+
+\usepackage{biblatex-series-number-checks}
+
+% https://tex.stackexchange.com/a/111851/18561
+\DeclareSourcemap{
+    \maps[datatype=bibtex]{
+      \map{
+        \step[fieldsource=checked]
+        \step[fieldset=usera,origfieldval]
+    }
+  }
+}
+
+\newcommand{\red}[1]{{\color{red}#1}}
+\newcommand{\green}[1]{{\color{green}#1}}
+
+%\DeclareFieldFormat{usera}{\red{#1}}
+
+% This shows the value of checked:
+%\AtEveryBibitem{
+%\csappto{blx@bbx@\thefield{entrytype}}{\iffieldundef{usera}{\space \red{Not checked!}}{\space\green{\printfield{usera}}}}
+%}
+% This just shows a warning for unchecked items
+% \AtEveryBibitem{
+% \csappto{blx@bbx@\thefield{entrytype}}{\iffieldundef{usera}{\space \red{Not checked!}}{}}
+% }
+
+% Safe space. Drop adress for CUP and OUP. Drop Series
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map{
+      \step[fieldsource=publisher, 
+            match=\regexp{\A((Cambridge|Oxford)\s+University|University\s+of\s+Chicago)\s+Press\Z},
+            final]
+      \step[fieldset=location, null]
+      \step[fieldset=address, null]
+    }
+    \map{
+      \step[fieldset=chapter, null]
+      \step[fieldset=series, null]
+    }
+    \map{
+      \pertype{techreport}
+      \step[fieldset=url, null]
+      \step[fieldset=urldate, null]
+    }
+    \map{
+      \pertype{article}
+      \step[fieldset=number, null]
+    }
+    \map{
+      \pertype{incollection}
+      \step[fieldset=volume, null]
+    }
+  }
+}
+
+
+
+\usepackage{gb4e}
+\usepackage{paradox-gb4e-bracket-patch}
+\exewidth{(222)}
+\judgewidth{**}
+\usepackage{cgloss}
+
+\def\eal{\begin{exe}\ex\begin{xlist}[iv.]\raggedright}
+\def\zl{\end{xlist}\end{exe}}
+
+\usepackage{jambox}

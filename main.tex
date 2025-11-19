@@ -29,6 +29,8 @@ which permits unrestricted re-use, distribution, and reproduction in any medium,
 %\newtoggle{draft}\togglefalse{draft}
 \newtoggle{draft}\toggletrue{draft}
 
+\bibliography{Bib.bib}
+
 
 \begin{document}
 
@@ -102,11 +104,10 @@ The current study presents an HPSG analysis for deliminative verbal reduplicatio
 \input{reduplication-include}
 
 \renewrobustcmd{\disambiguate}[3]{#1}
-\bibliographystyle{lin}
-
-\bibliography{Bib.bib}
+%\bibliographystyle{lin}
 
 
+\printbibliography
 
 \end{document}
 
